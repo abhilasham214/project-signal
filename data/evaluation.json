@@ -1,0 +1,101 @@
+{
+  "_comment": "ANSWER KEY. This file must never be included in any prompt sent to an AI provider. It is read only by lib/evaluation after analysis has completed. See docs/EVALUATION.md.",
+  "projects": [
+    {
+      "projectId": "P001",
+      "expectedSignals": [
+        {
+          "category": "DEPENDENCY",
+          "description": "Outstanding HVAC ductwork approval for Levels 7 to 9 is affecting downstream ceiling grid and duct installation on those levels.",
+          "keyEvidence": ["P001-I001", "P001-DEP001", "P001-SR002", "P001-CU001"]
+        },
+        {
+          "category": "UNRESOLVED_DECISION",
+          "description": "The Level 8 duct and sprinkler clash resolution method has been modelled and presented but no option has been selected.",
+          "keyEvidence": ["P001-D001", "P001-M003", "P001-M004", "P001-CO002"]
+        },
+        {
+          "category": "SCHEDULE_WARNING",
+          "description": "The contractor has given notice that the ceiling and drywall crew will be released on 20 July 2026, which may affect the Levels 7 to 9 sequence.",
+          "keyEvidence": ["P001-CU003", "P001-CU002", "P001-M005"]
+        }
+      ]
+    },
+    {
+      "projectId": "P002",
+      "expectedSignals": [
+        {
+          "category": "REPEATED_ISSUE",
+          "description": "Washroom core flood tests have failed at the same door threshold position on three separate floors, each traced to the membrane upstand being terminated below the detailed height.",
+          "keyEvidence": ["P002-I001", "P002-I002", "P002-I003", "P002-CO003"]
+        },
+        {
+          "category": "UNRESOLVED_DECISION",
+          "description": "The method statement for membrane upstand termination remains in draft and no approved version has been issued to the trades.",
+          "keyEvidence": ["P002-D002", "P002-CU004", "P002-M006"]
+        },
+        {
+          "category": "MISSING_INFORMATION",
+          "description": "The pre-tiling membrane hold point agreed in principle was never added to the inspection and test plan, and the remaining cores are scheduled under the unrevised plan.",
+          "keyEvidence": ["P002-I004", "P002-SR007", "P002-CO003"]
+        }
+      ]
+    },
+    {
+      "projectId": "P003",
+      "expectedSignals": [
+        {
+          "category": "UNRESOLVED_DECISION",
+          "description": "The entrance facade infill panel material has been under selection since April 2026 across multiple meetings without a decision being made.",
+          "keyEvidence": ["P003-D001", "P003-M001", "P003-M004", "P003-M005"]
+        },
+        {
+          "category": "DEPENDENCY",
+          "description": "The unresolved panel material selection is holding the secondary steel package, the reception floor setting-out and the reception ceiling head detail.",
+          "keyEvidence": ["P003-DEP001", "P003-I001", "P003-I002", "P003-I003"]
+        },
+        {
+          "category": "SCHEDULE_WARNING",
+          "description": "Reserved October fabrication capacity is stated to be released if no order is placed by 30 September 2026, against a facade installation window opening 2 November 2026.",
+          "keyEvidence": ["P003-CU002", "P003-DEP002", "P003-CO001"]
+        }
+      ]
+    },
+    {
+      "projectId": "P004",
+      "expectedSignals": [
+        {
+          "category": "CHANGE",
+          "description": "Several changes have accumulated: a lighting fixture substitution with a longer lead time, a client-instructed Level 2 meeting room addition causing abortive work, and a revised raised access floor delivery date.",
+          "keyEvidence": ["P004-C001", "P004-C002", "P004-C003"]
+        },
+        {
+          "category": "SCHEDULE_WARNING",
+          "description": "Practical completion has moved from 29 January 2027 to 19 February 2027 and the contractor reports no float remaining on the Levels 1 and 2 second fix sequence.",
+          "keyEvidence": ["P004-C004", "P004-CU003", "P004-M006"]
+        },
+        {
+          "category": "UNRESOLVED_DECISION",
+          "description": "No decision has been taken on whether to recover the commissioning week lost in the revised programme, which affects the client witness testing window.",
+          "keyEvidence": ["P004-D003", "P004-I004", "P004-DEP004"]
+        }
+      ]
+    },
+    {
+      "projectId": "P005",
+      "expectedSignals": [],
+      "expectedAbsences": [
+        {
+          "topic": "Level 2 screed moisture",
+          "reason": "The elevated moisture readings were investigated, the cause was repaired, two consecutive surveys returned readings within specification, the substrate was accepted and the flooring was installed and accepted with no defects. A later four week inspection confirmed no moisture-related defects. This should not be surfaced as an active signal.",
+          "resolutionEvidence": ["P005-I001", "P005-SR004", "P005-SR005", "P005-CO002", "P005-CU005"]
+        },
+        {
+          "topic": "Quiet room acoustic performance",
+          "reason": "The mock-up shortfall was resolved by a revised head detail which retested above target and was adopted across all quiet rooms. This should not be surfaced as an active signal.",
+          "resolutionEvidence": ["P005-I002", "P005-CO003", "P005-D002"]
+        }
+      ]
+    }
+  ]
+}

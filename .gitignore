@@ -1,0 +1,19 @@
+node_modules/
+.next/
+out/
+build/
+.DS_Store
+
+# Local environment — may contain a real GEMINI_API_KEY. Never commit.
+.env
+.env.local
+.env*.local
+
+# Runtime store: analysis runs and human review decisions.
+.data/
+
+*.tsbuildinfo
+next-env.d.ts
+
+# Test store, written by the Vitest suite.
+.data-test/

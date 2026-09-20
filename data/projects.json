@@ -1,0 +1,1433 @@
+{
+  "projects": [
+    {
+      "id": "P001",
+      "name": "Riverside Commercial Tower",
+      "type": "Commercial Office Fit-Out",
+      "location": "Bengaluru, India",
+      "client": "Meridian Financial Services",
+      "status": "Construction",
+      "description": "Twelve-storey workplace fit-out across Levels 5 to 12, including open-plan workstations, client-facing meeting suites and a consolidated building services upgrade.",
+      "plannedCompletion": "2026-11-30",
+      "currentCompletion": "2026-11-30",
+      "meetings": [
+        {
+          "id": "P001-M001",
+          "date": "2026-06-04",
+          "title": "Weekly site progress meeting - week 23",
+          "attendees": [
+            "Priya Raghavan (Construction Manager)",
+            "Daniel Okafor (Main Contractor)",
+            "Sunita Menon (MEP Consultant)",
+            "Tom Fraser (Design Lead)"
+          ],
+          "notes": "Levels 5 and 6 partition framing complete and signed off. Level 7 partitions at 80 percent. Daniel confirmed the MEP subcontractor has mobilised a second crew for Levels 7 to 9. Sunita noted the HVAC ductwork shop drawings for Levels 7 to 9 were issued for review on 29 May and remain with the services consultant. Tom asked whether ceiling setting-out could start independently; Sunita advised the duct drop positions are not fixed until the drawings are returned. Action carried forward for the consultant to confirm a return date."
+        },
+        {
+          "id": "P001-M002",
+          "date": "2026-06-11",
+          "title": "Weekly site progress meeting - week 24",
+          "attendees": [
+            "Priya Raghavan (Construction Manager)",
+            "Daniel Okafor (Main Contractor)",
+            "Sunita Menon (MEP Consultant)",
+            "Tom Fraser (Design Lead)"
+          ],
+          "notes": "Level 7 partitions complete. Daniel raised that ceiling grid installation on Level 7 was due to start on 15 June per the programme but the crew cannot set out hanger positions without approved duct routing. Sunita reported the review is ongoing and that a clash between the primary supply duct and the sprinkler main on Level 8 was identified during review, now being coordinated with the fire services engineer. No revised return date was given. Priya asked for the coordination to be closed out as a priority."
+        },
+        {
+          "id": "P001-M003",
+          "date": "2026-06-18",
+          "title": "Services coordination workshop",
+          "attendees": [
+            "Sunita Menon (MEP Consultant)",
+            "Daniel Okafor (Main Contractor)",
+            "Rakesh Iyer (Fire Services Engineer)",
+            "Priya Raghavan (Construction Manager)"
+          ],
+          "notes": "Workshop convened to resolve the Level 8 duct and sprinkler main conflict. Two options were reviewed: lowering the supply duct by 150mm across grid lines C to F, or rerouting the sprinkler main above the duct run. Rakesh noted a sprinkler reroute would require hydraulic recalculation and resubmission to the authority. No option was selected at the workshop. Sunita to model both options and revert. Daniel stated that ceiling works on Levels 7 to 9 remain held pending the outcome."
+        },
+        {
+          "id": "P001-M004",
+          "date": "2026-06-25",
+          "title": "Weekly site progress meeting - week 26",
+          "attendees": [
+            "Priya Raghavan (Construction Manager)",
+            "Daniel Okafor (Main Contractor)",
+            "Sunita Menon (MEP Consultant)"
+          ],
+          "notes": "Sunita presented the modelled options. The duct-lowering option reduces finished ceiling height on Level 8 by 100mm against the design intent, which the design lead would need to accept. The sprinkler reroute adds an estimated three week authority resubmission. Neither option was confirmed. Daniel reiterated that the ceiling crew has been standing by since 15 June and has been redeployed to Level 5 snagging, which is nearly exhausted as a holding activity."
+        },
+        {
+          "id": "P001-M005",
+          "date": "2026-07-02",
+          "title": "Weekly site progress meeting - week 27",
+          "attendees": [
+            "Priya Raghavan (Construction Manager)",
+            "Daniel Okafor (Main Contractor)",
+            "Tom Fraser (Design Lead)"
+          ],
+          "notes": "Sunita absent. Tom has not yet received a formal request to accept the reduced ceiling height on Level 8. Daniel confirmed the drywall and ceiling crew will be released to another site from 20 July if no instruction is received. Levels 9 to 12 partition works continue as planned and are unaffected. Priya to escalate the outstanding HVAC drawing approval with the consultant."
+        }
+      ],
+      "siteReports": [
+        {
+          "id": "P001-SR001",
+          "date": "2026-06-08",
+          "reportedBy": "Arun Kulkarni (Site Supervisor)",
+          "area": "Levels 5-7",
+          "observations": "Partition framing on Level 7 progressing well, approximately 80 percent complete. Level 5 and 6 boarding complete. Ceiling grid materials for Level 7 delivered to site and stored in the Level 6 holding area. No installation start date confirmed by the MEP subcontractor."
+        },
+        {
+          "id": "P001-SR002",
+          "date": "2026-06-16",
+          "reportedBy": "Arun Kulkarni (Site Supervisor)",
+          "area": "Levels 7-9",
+          "observations": "Level 7 partitions complete. Ceiling grid installation did not commence as scheduled today. The ceiling subcontractor foreman advised his team has no approved duct setting-out to work from. Ceiling grid materials remain in storage on Level 6. Two operatives reassigned to Level 5 snagging."
+        },
+        {
+          "id": "P001-SR003",
+          "date": "2026-06-23",
+          "reportedBy": "Arun Kulkarni (Site Supervisor)",
+          "area": "Levels 7-9",
+          "observations": "No ceiling activity on Levels 7, 8 or 9 this week. Ductwork spools for Level 7 are on site and remain uninstalled. MEP crew working on riser connections at Level 10 instead. Storage on Level 6 is becoming congested with ceiling grid and duct material awaiting installation."
+        },
+        {
+          "id": "P001-SR004",
+          "date": "2026-06-30",
+          "reportedBy": "Arun Kulkarni (Site Supervisor)",
+          "area": "Levels 7-9",
+          "observations": "Ceiling and ductwork activity on Levels 7 to 9 remains stopped. Level 6 material storage now at capacity; further deliveries of ceiling tile have been asked to hold at the supplier. Level 9 partitions complete and ready for services first fix. Levels 10 to 12 partitions on programme."
+        },
+        {
+          "id": "P001-SR005",
+          "date": "2026-07-07",
+          "reportedBy": "Arun Kulkarni (Site Supervisor)",
+          "area": "Levels 5-12",
+          "observations": "Levels 10 to 12 partition works on programme and unaffected. Levels 7 to 9 unchanged from last week, no ceiling or ductwork installation. Level 5 snagging list now substantially closed out and limited holding work remains available for the ceiling crew. The ceiling subcontractor supervisor asked for a written start date."
+        }
+      ],
+      "issues": [
+        {
+          "id": "P001-I001",
+          "date": "2026-06-11",
+          "title": "HVAC ductwork shop drawings Levels 7-9 not returned from review",
+          "raisedBy": "Daniel Okafor (Main Contractor)",
+          "discipline": "MEP",
+          "description": "Ductwork shop drawings for Levels 7 to 9 were issued for consultant review on 29 May 2026. No approved or commented set has been returned. Ceiling hanger setting-out and duct installation on these levels cannot be released to the trades without it.",
+          "status": "Open"
+        },
+        {
+          "id": "P001-I002",
+          "date": "2026-06-11",
+          "title": "Supply duct clashes with sprinkler main at Level 8 grid C-F",
+          "raisedBy": "Sunita Menon (MEP Consultant)",
+          "discipline": "MEP",
+          "description": "During review of the Level 8 ductwork drawings the primary supply duct was found to occupy the same zone as the sprinkler distribution main between grid lines C and F. Resolution requires either a duct drop of 150mm or a sprinkler reroute. Coordination is ongoing with the fire services engineer.",
+          "status": "Open"
+        },
+        {
+          "id": "P001-I003",
+          "date": "2026-06-30",
+          "title": "Material storage capacity exceeded on Level 6",
+          "raisedBy": "Arun Kulkarni (Site Supervisor)",
+          "discipline": "Logistics",
+          "description": "Ceiling grid, ceiling tile and ductwork material for Levels 7 to 9 is accumulating in the Level 6 holding area because installation has not started. Storage is at capacity and further deliveries have been held at the supplier.",
+          "status": "Open"
+        },
+        {
+          "id": "P001-I004",
+          "date": "2026-05-12",
+          "title": "Floor box positions on Level 5 differ from furniture layout",
+          "raisedBy": "Tom Fraser (Design Lead)",
+          "discipline": "Interiors",
+          "description": "Six floor boxes on Level 5 were set out to a superseded furniture layout. Positions were corrected against revision C of the layout and reinstated before screed. Verified on site 22 May 2026.",
+          "status": "Closed",
+          "closedDate": "2026-05-22"
+        }
+      ],
+      "decisions": [
+        {
+          "id": "P001-D001",
+          "date": "2026-06-18",
+          "topic": "Level 8 duct and sprinkler clash resolution method",
+          "description": "Choice between lowering the primary supply duct by 150mm across grid C-F, which reduces finished ceiling height on Level 8 against the design intent, or rerouting the sprinkler main, which requires hydraulic recalculation and authority resubmission. Both options were modelled and presented on 25 June 2026. No option has been selected.",
+          "owner": "Sunita Menon (MEP Consultant)",
+          "status": "Pending"
+        },
+        {
+          "id": "P001-D002",
+          "date": "2026-04-16",
+          "topic": "Ceiling tile specification for open-plan areas",
+          "description": "Acoustic mineral fibre tile selected in preference to the metal tile option on acoustic performance and lead time. Confirmed and issued to the contractor.",
+          "owner": "Tom Fraser (Design Lead)",
+          "status": "Agreed",
+          "agreedDate": "2026-04-16"
+        }
+      ],
+      "changes": [
+        {
+          "id": "P001-C001",
+          "date": "2026-05-20",
+          "title": "Additional data outlets to Levels 10 and 11",
+          "description": "Client requested a further 48 data outlets across Levels 10 and 11 to support a revised desk density. Instruction issued to the contractor and cabling containment adjusted accordingly. No change to the level completion dates was requested at the time of instruction.",
+          "origin": "Client request"
+        }
+      ],
+      "dependencies": [
+        {
+          "id": "P001-DEP001",
+          "description": "Ceiling grid installation on Levels 7 to 9 is sequenced to follow approved HVAC ductwork setting-out, as hanger positions are fixed relative to duct drops.",
+          "predecessor": "Approved HVAC ductwork shop drawings Levels 7-9",
+          "successor": "Ceiling grid installation Levels 7-9",
+          "note": "Programme start for ceiling grid on Level 7 was 15 June 2026."
+        },
+        {
+          "id": "P001-DEP002",
+          "description": "Ductwork installation on Levels 7 to 9 follows partition completion and precedes ceiling closure on the same level.",
+          "predecessor": "Partition completion Levels 7-9",
+          "successor": "Ductwork installation Levels 7-9",
+          "note": "Partitions on Levels 7 and 9 are complete."
+        },
+        {
+          "id": "P001-DEP003",
+          "description": "Level 5 and 6 handover inspection follows completion of snagging works on those levels.",
+          "predecessor": "Level 5-6 snagging",
+          "successor": "Level 5-6 handover inspection",
+          "note": "Snagging substantially complete as at 7 July 2026."
+        }
+      ],
+      "contractorUpdates": [
+        {
+          "id": "P001-CU001",
+          "date": "2026-06-15",
+          "contractor": "Okafor Build Services",
+          "trade": "Main contractor",
+          "update": "Ceiling grid crew attended Level 7 this morning as planned and stood down. We are unable to set out hangers without approved duct routing. Please advise a date for the approved drawings so we can re-sequence."
+        },
+        {
+          "id": "P001-CU002",
+          "date": "2026-06-26",
+          "contractor": "Okafor Build Services",
+          "trade": "Main contractor",
+          "update": "Following the workshop on 18 June we still have no instruction on the Level 8 clash. Our ceiling and drywall crew has been held on site for eleven days on holding work. We need a decision or we will have to release the crew to another project."
+        },
+        {
+          "id": "P001-CU003",
+          "date": "2026-07-06",
+          "contractor": "Okafor Build Services",
+          "trade": "Main contractor",
+          "update": "Formal notice that the ceiling and drywall crew will be released from this site on 20 July 2026 unless approved ductwork setting-out for Levels 7 to 9 is received. Re-mobilisation after release would be subject to availability."
+        },
+        {
+          "id": "P001-CU004",
+          "date": "2026-06-22",
+          "contractor": "Southline Electrical",
+          "trade": "Electrical",
+          "update": "Containment and cabling for the additional Level 10 and 11 data outlets is complete. Levels 10 to 12 first fix proceeding to programme."
+        }
+      ],
+      "consultantUpdates": [
+        {
+          "id": "P001-CO001",
+          "date": "2026-06-12",
+          "consultant": "Sunita Menon",
+          "discipline": "MEP",
+          "update": "Review of the Levels 7 to 9 ductwork submission is in progress. A spatial conflict on Level 8 between the primary supply duct and the sprinkler distribution main has been identified and referred to the fire services engineer. The submission cannot be returned as approved until the conflict is resolved."
+        },
+        {
+          "id": "P001-CO002",
+          "date": "2026-06-25",
+          "consultant": "Sunita Menon",
+          "discipline": "MEP",
+          "update": "Both resolution options have been modelled. Option A lowers the supply duct 150mm across grid C-F with a corresponding 100mm reduction in finished ceiling height on Level 8. Option B reroutes the sprinkler main and requires hydraulic recalculation and resubmission to the authority, estimated at three weeks. Design team acceptance is required before the ductwork drawings can be returned."
+        },
+        {
+          "id": "P001-CO003",
+          "date": "2026-07-03",
+          "consultant": "Rakesh Iyer",
+          "discipline": "Fire services",
+          "update": "Confirming that any reroute of the sprinkler distribution main on Level 8 requires a hydraulic recalculation and a resubmission to the authority having jurisdiction. We have not been instructed to proceed with either option."
+        }
+      ]
+    },
+    {
+      "id": "P002",
+      "name": "Harbourfront Workplace Refurbishment",
+      "type": "Corporate Interiors Refurbishment",
+      "location": "Hong Kong SAR",
+      "client": "Pacific Rim Advisory Group",
+      "status": "Construction",
+      "description": "Phased refurbishment of nine occupied floors, including washroom core renewal, tea point installations and upgraded end-of-trip facilities, delivered floor by floor around a live tenancy.",
+      "plannedCompletion": "2027-02-26",
+      "currentCompletion": "2027-03-19",
+      "meetings": [
+        {
+          "id": "P002-M001",
+          "date": "2026-03-19",
+          "title": "Phase 1 quality review - Level 3",
+          "attendees": [
+            "Marcus Leung (Construction Manager)",
+            "Eddie Chan (Wet Trades Subcontractor)",
+            "Hannah Ward (Architect)",
+            "Jasmine Poon (QA Inspector)"
+          ],
+          "notes": "Flood test of the Level 3 washroom core failed on first attempt. Water tracked into the adjacent corridor screed at the north-east corner. Eddie attributed it to the membrane upstand being terminated below the finished tile bed height at the door threshold. Agreed to strip back the threshold, reform the upstand to 150mm above finished floor and retest. Hannah to reissue the threshold detail with the upstand height dimensioned."
+        },
+        {
+          "id": "P002-M002",
+          "date": "2026-04-09",
+          "title": "Weekly progress and quality meeting",
+          "attendees": [
+            "Marcus Leung (Construction Manager)",
+            "Eddie Chan (Wet Trades Subcontractor)",
+            "Jasmine Poon (QA Inspector)"
+          ],
+          "notes": "Level 3 washroom core retested and passed on 2 April. Rework completed at the subcontractor's cost. Jasmine asked whether the reissued threshold detail had been distributed to the Level 5 and Level 8 crews; Eddie confirmed he would circulate it. Level 5 core waterproofing scheduled to start 27 April."
+        },
+        {
+          "id": "P002-M003",
+          "date": "2026-05-21",
+          "title": "Phase 2 quality review - Level 5",
+          "attendees": [
+            "Marcus Leung (Construction Manager)",
+            "Eddie Chan (Wet Trades Subcontractor)",
+            "Hannah Ward (Architect)",
+            "Jasmine Poon (QA Inspector)"
+          ],
+          "notes": "Level 5 washroom core flood test failed. Seepage observed at the door threshold on the corridor side, in the same position as the Level 3 failure. Eddie stated the crew on Level 5 was a different gang and may not have received the reissued detail. Marcus asked for the detail distribution to be evidenced. Strip back and reform agreed, retest to follow."
+        },
+        {
+          "id": "P002-M004",
+          "date": "2026-06-18",
+          "title": "Weekly progress and quality meeting",
+          "attendees": [
+            "Marcus Leung (Construction Manager)",
+            "Eddie Chan (Wet Trades Subcontractor)",
+            "Jasmine Poon (QA Inspector)"
+          ],
+          "notes": "Level 5 core retested and passed on 11 June. Two weeks lost against the Phase 2 programme. Jasmine proposed a hold point requiring inspection of the membrane upstand before tiling on every remaining core. Eddie agreed in principle but no hold point has been added to the inspection and test plan. Level 8 core waterproofing due to start 6 July."
+        },
+        {
+          "id": "P002-M005",
+          "date": "2026-07-23",
+          "title": "Phase 3 quality review - Level 8",
+          "attendees": [
+            "Marcus Leung (Construction Manager)",
+            "Eddie Chan (Wet Trades Subcontractor)",
+            "Hannah Ward (Architect)",
+            "Jasmine Poon (QA Inspector)"
+          ],
+          "notes": "Level 8 washroom core flood test failed at the threshold. Jasmine confirmed no pre-tiling membrane inspection was carried out because the hold point discussed on 18 June was never added to the inspection and test plan. Hannah noted the reissued detail is clear and correctly dimensioned. Marcus asked for a written method statement covering upstand termination before any further core is waterproofed. Levels 9 and 11 cores remain to be done."
+        },
+        {
+          "id": "P002-M006",
+          "date": "2026-08-13",
+          "title": "Weekly progress and quality meeting",
+          "attendees": [
+            "Marcus Leung (Construction Manager)",
+            "Eddie Chan (Wet Trades Subcontractor)",
+            "Jasmine Poon (QA Inspector)"
+          ],
+          "notes": "Level 8 retested and passed on 6 August. Method statement for upstand termination received in draft and under review. Phase 3 completion now forecast three weeks later than the baseline. Level 9 core waterproofing scheduled for 7 September, Level 11 to follow."
+        }
+      ],
+      "siteReports": [
+        {
+          "id": "P002-SR001",
+          "date": "2026-03-17",
+          "reportedBy": "Kelvin Ho (Site Supervisor)",
+          "area": "Level 3 washroom core",
+          "observations": "Flood test set up in the Level 3 washroom core at 08:00 and held for 24 hours. Damp patch observed in the corridor screed adjacent to the north-east threshold at inspection. Test recorded as failed. Tiling on hold."
+        },
+        {
+          "id": "P002-SR002",
+          "date": "2026-04-02",
+          "reportedBy": "Kelvin Ho (Site Supervisor)",
+          "area": "Level 3 washroom core",
+          "observations": "Threshold stripped back and membrane upstand reformed to 150mm above finished floor level. Repeat flood test held 24 hours with no seepage observed. Test recorded as passed. Tiling released."
+        },
+        {
+          "id": "P002-SR003",
+          "date": "2026-05-19",
+          "reportedBy": "Kelvin Ho (Site Supervisor)",
+          "area": "Level 5 washroom core",
+          "observations": "Flood test on the Level 5 washroom core failed. Seepage at the corridor-side door threshold. Visual inspection of the stripped area shows the membrane terminating at approximately 60mm above floor level rather than the detailed 150mm. Tiling on hold."
+        },
+        {
+          "id": "P002-SR004",
+          "date": "2026-06-11",
+          "reportedBy": "Kelvin Ho (Site Supervisor)",
+          "area": "Level 5 washroom core",
+          "observations": "Level 5 membrane reformed and retested over 24 hours. No seepage. Test recorded as passed. Tiling released. Corridor screed in the affected zone cut out and replaced."
+        },
+        {
+          "id": "P002-SR005",
+          "date": "2026-07-21",
+          "reportedBy": "Kelvin Ho (Site Supervisor)",
+          "area": "Level 8 washroom core",
+          "observations": "Flood test on the Level 8 washroom core failed. Seepage at the door threshold on the corridor side. Membrane upstand at the threshold measured at approximately 70mm above floor level. No record of a pre-tiling membrane inspection for this core in the site inspection file."
+        },
+        {
+          "id": "P002-SR006",
+          "date": "2026-08-06",
+          "reportedBy": "Kelvin Ho (Site Supervisor)",
+          "area": "Level 8 washroom core",
+          "observations": "Level 8 threshold reformed and retested over 24 hours with no seepage. Test recorded as passed. Tiling released. Corridor finishes adjacent to the threshold made good."
+        },
+        {
+          "id": "P002-SR007",
+          "date": "2026-09-01",
+          "reportedBy": "Kelvin Ho (Site Supervisor)",
+          "area": "Levels 9 and 11",
+          "observations": "Level 9 washroom core stripped out and screed prepared, waterproofing due to commence 7 September. Level 11 strip-out to follow. No pre-tiling membrane hold point recorded in the current inspection and test plan for either core. Tea point installations on Levels 4, 6 and 7 complete with no defects raised."
+        }
+      ],
+      "issues": [
+        {
+          "id": "P002-I001",
+          "date": "2026-03-17",
+          "title": "Level 3 washroom core flood test failure at threshold",
+          "raisedBy": "Jasmine Poon (QA Inspector)",
+          "discipline": "Wet trades",
+          "description": "Flood test of the Level 3 washroom core failed with water tracking into the adjacent corridor screed at the north-east door threshold. Membrane upstand terminated below the finished tile bed. Stripped back, reformed to 150mm and retested successfully on 2 April 2026.",
+          "status": "Closed",
+          "closedDate": "2026-04-02"
+        },
+        {
+          "id": "P002-I002",
+          "date": "2026-05-19",
+          "title": "Level 5 washroom core flood test failure at threshold",
+          "raisedBy": "Jasmine Poon (QA Inspector)",
+          "discipline": "Wet trades",
+          "description": "Flood test of the Level 5 washroom core failed with seepage at the corridor-side door threshold. Membrane measured terminating at approximately 60mm above floor level against a detailed 150mm. Stripped back, reformed and retested successfully on 11 June 2026. Corridor screed cut out and replaced.",
+          "status": "Closed",
+          "closedDate": "2026-06-11"
+        },
+        {
+          "id": "P002-I003",
+          "date": "2026-07-21",
+          "title": "Level 8 washroom core flood test failure at threshold",
+          "raisedBy": "Jasmine Poon (QA Inspector)",
+          "discipline": "Wet trades",
+          "description": "Flood test of the Level 8 washroom core failed with seepage at the door threshold. Membrane upstand measured at approximately 70mm above floor level. No pre-tiling membrane inspection record exists for this core. Stripped back, reformed and retested successfully on 6 August 2026.",
+          "status": "Closed",
+          "closedDate": "2026-08-06"
+        },
+        {
+          "id": "P002-I004",
+          "date": "2026-06-18",
+          "title": "Pre-tiling membrane hold point not added to inspection and test plan",
+          "raisedBy": "Jasmine Poon (QA Inspector)",
+          "discipline": "Quality",
+          "description": "A hold point requiring inspection of the membrane upstand before tiling was proposed for all remaining washroom cores and agreed in principle. The inspection and test plan has not been revised to include it. Levels 9 and 11 cores are still to be waterproofed.",
+          "status": "Open"
+        },
+        {
+          "id": "P002-I005",
+          "date": "2026-04-28",
+          "title": "Tea point joinery finish scratched during delivery",
+          "raisedBy": "Kelvin Ho (Site Supervisor)",
+          "discipline": "Joinery",
+          "description": "Two tea point carcasses for Level 6 arrived with surface scratches to the laminate face. Supplier replaced both units on 6 May 2026 at no cost. Installed and accepted.",
+          "status": "Closed",
+          "closedDate": "2026-05-06"
+        }
+      ],
+      "decisions": [
+        {
+          "id": "P002-D001",
+          "date": "2026-03-19",
+          "topic": "Waterproofing threshold detail revision",
+          "description": "Threshold detail reissued with the membrane upstand height dimensioned at 150mm above finished floor level to remove ambiguity. Issued as revision B on 24 March 2026.",
+          "owner": "Hannah Ward (Architect)",
+          "status": "Agreed",
+          "agreedDate": "2026-03-24"
+        },
+        {
+          "id": "P002-D002",
+          "date": "2026-07-23",
+          "topic": "Method statement requirement for membrane upstand termination",
+          "description": "Marcus requested a written method statement covering upstand termination before any further washroom core is waterproofed. A draft was received on 13 August 2026 and remains under review. No approved method statement has been issued to the trades.",
+          "owner": "Eddie Chan (Wet Trades Subcontractor)",
+          "status": "Pending"
+        }
+      ],
+      "changes": [
+        {
+          "id": "P002-C001",
+          "date": "2026-06-25",
+          "title": "Phase 3 completion date revised",
+          "description": "Phase 3 completion moved from 5 September 2026 to 26 September 2026 to absorb rework time in the washroom cores. Client informed and the revised phasing plan issued.",
+          "origin": "Programme revision"
+        },
+        {
+          "id": "P002-C002",
+          "date": "2026-05-07",
+          "title": "End-of-trip locker quantity increased",
+          "description": "Client increased end-of-trip locker provision from 90 to 130 units following an occupancy survey. Additional units ordered within the existing supplier lead time.",
+          "origin": "Client request"
+        }
+      ],
+      "dependencies": [
+        {
+          "id": "P002-DEP001",
+          "description": "Washroom core tiling on each floor follows a successful flood test of the waterproofing membrane on that floor.",
+          "predecessor": "Flood test pass",
+          "successor": "Washroom core tiling",
+          "note": "Applies to Levels 3, 5, 8, 9 and 11."
+        },
+        {
+          "id": "P002-DEP002",
+          "description": "Floor handover to the client follows completion of washroom core finishes on that floor.",
+          "predecessor": "Washroom core finishes",
+          "successor": "Floor handover",
+          "note": "Levels 3 and 5 handed over. Level 8 pending final finishes."
+        },
+        {
+          "id": "P002-DEP003",
+          "description": "Level 9 and Level 11 waterproofing follows strip-out and screed preparation on those floors.",
+          "predecessor": "Strip-out and screed preparation",
+          "successor": "Waterproofing application",
+          "note": "Level 9 screed prepared as at 1 September 2026."
+        }
+      ],
+      "contractorUpdates": [
+        {
+          "id": "P002-CU001",
+          "date": "2026-04-09",
+          "contractor": "Chan Wet Trades Limited",
+          "trade": "Waterproofing and tiling",
+          "update": "Level 3 rework complete and retested. We have circulated the revised threshold detail to our supervisors. Level 5 core will start on 27 April."
+        },
+        {
+          "id": "P002-CU002",
+          "date": "2026-05-26",
+          "contractor": "Chan Wet Trades Limited",
+          "trade": "Waterproofing and tiling",
+          "update": "Level 5 strip back in progress. The gang on Level 5 is not the gang that worked Level 3. We are reviewing how the revised detail is briefed to new gangs joining the site."
+        },
+        {
+          "id": "P002-CU003",
+          "date": "2026-07-28",
+          "contractor": "Chan Wet Trades Limited",
+          "trade": "Waterproofing and tiling",
+          "update": "Level 8 strip back underway, retest expected first week of August. We accept the rework cost. A draft method statement for upstand termination will follow."
+        },
+        {
+          "id": "P002-CU004",
+          "date": "2026-09-02",
+          "contractor": "Chan Wet Trades Limited",
+          "trade": "Waterproofing and tiling",
+          "update": "Level 9 core waterproofing mobilising for 7 September as planned. Our draft method statement is still with the construction manager for review. Please confirm whether we should wait for approval before starting."
+        },
+        {
+          "id": "P002-CU005",
+          "date": "2026-08-20",
+          "contractor": "Summit Joinery Works",
+          "trade": "Joinery",
+          "update": "Tea point installations on Levels 4, 6 and 7 complete and accepted. Level 8 tea point scheduled once washroom core finishes are released."
+        }
+      ],
+      "consultantUpdates": [
+        {
+          "id": "P002-CO001",
+          "date": "2026-03-24",
+          "consultant": "Hannah Ward",
+          "discipline": "Architecture",
+          "update": "Threshold detail reissued as revision B with the membrane upstand dimensioned at 150mm above finished floor level. The previous revision showed the upstand without a dimension, which may have allowed interpretation."
+        },
+        {
+          "id": "P002-CO002",
+          "date": "2026-07-30",
+          "consultant": "Hannah Ward",
+          "discipline": "Architecture",
+          "update": "Reviewed the Level 8 failure position against revision B of the threshold detail. The detail is correctly dimensioned and unambiguous. The installed condition does not match the issued detail."
+        },
+        {
+          "id": "P002-CO003",
+          "date": "2026-08-27",
+          "consultant": "Jasmine Poon",
+          "discipline": "Quality assurance",
+          "update": "Three washroom core flood tests have now failed at the same threshold position on Levels 3, 5 and 8. The inspection and test plan has not been revised to include the pre-tiling membrane hold point proposed in June. Levels 9 and 11 are scheduled under the current unrevised plan."
+        }
+      ]
+    },
+    {
+      "id": "P003",
+      "name": "Marina Bay Regional Headquarters",
+      "type": "Headquarters Workplace",
+      "location": "Singapore",
+      "client": "Kestrel Technologies Asia",
+      "status": "Construction",
+      "description": "New regional headquarters comprising a double-height reception, four workplace floors, a staff dining level and an external terrace, including a feature entrance facade to the street elevation.",
+      "plannedCompletion": "2027-05-14",
+      "currentCompletion": "2027-05-14",
+      "meetings": [
+        {
+          "id": "P003-M001",
+          "date": "2026-04-23",
+          "title": "Design team meeting - entrance facade",
+          "attendees": [
+            "Clara Nunes (Construction Manager)",
+            "Wei Lin Tan (Lead Architect)",
+            "Gareth Pryce (Facade Consultant)",
+            "Amira Haddad (Client Representative)"
+          ],
+          "notes": "Three options presented for the entrance facade infill panels: honed granite, glazed terracotta baguettes, and anodised aluminium rainscreen. Amira expressed a preference for the stone option on brand grounds but noted the budget position is not confirmed until the client capital review in June. Gareth advised that the bracket and carrier system design differs materially between the three and cannot be progressed until the material is fixed. No selection made."
+        },
+        {
+          "id": "P003-M002",
+          "date": "2026-05-14",
+          "title": "Design team meeting - entrance facade",
+          "attendees": [
+            "Clara Nunes (Construction Manager)",
+            "Wei Lin Tan (Lead Architect)",
+            "Gareth Pryce (Facade Consultant)",
+            "Amira Haddad (Client Representative)"
+          ],
+          "notes": "Samples of all three options reviewed under the site mock-up lighting. Wei Lin recommended terracotta on weight and maintenance grounds. Amira restated that the capital review in June governs. Gareth tabled indicative lead times: granite 18 weeks, terracotta 14 weeks, aluminium 10 weeks from order. Clara noted the facade installation window in the programme opens on 2 November 2026. Selection deferred to the June meeting."
+        },
+        {
+          "id": "P003-M003",
+          "date": "2026-06-25",
+          "title": "Design team meeting - entrance facade",
+          "attendees": [
+            "Clara Nunes (Construction Manager)",
+            "Wei Lin Tan (Lead Architect)",
+            "Gareth Pryce (Facade Consultant)"
+          ],
+          "notes": "Amira absent; the client capital review was rescheduled to July. Gareth advised that structural loading for the secondary steel supporting the facade differs by approximately 40 percent between the granite and aluminium options, and that the steel package cannot be released for fabrication without the material decision. Wei Lin asked whether a worst-case design to granite loading was viable as a hedge. Gareth said this is technically possible but would carry abortive cost if a lighter option is chosen. No instruction given."
+        },
+        {
+          "id": "P003-M004",
+          "date": "2026-07-30",
+          "title": "Design team meeting - entrance facade",
+          "attendees": [
+            "Clara Nunes (Construction Manager)",
+            "Wei Lin Tan (Lead Architect)",
+            "Gareth Pryce (Facade Consultant)",
+            "Amira Haddad (Client Representative)"
+          ],
+          "notes": "Amira reported the capital review took place but the facade allowance was referred back for further cost information and no budget figure has been confirmed. Clara set out that, working back from the 2 November installation window, an order for granite would need to be placed by early July and that date has passed. Terracotta would need an order by late July. Amira asked for a cost comparison including the secondary steel implications before committing. Gareth to issue within two weeks."
+        },
+        {
+          "id": "P003-M005",
+          "date": "2026-08-27",
+          "title": "Design team meeting - entrance facade",
+          "attendees": [
+            "Clara Nunes (Construction Manager)",
+            "Wei Lin Tan (Lead Architect)",
+            "Gareth Pryce (Facade Consultant)"
+          ],
+          "notes": "Cost comparison issued on 12 August covering panel supply, carrier system and secondary steel for all three options. No response received from the client. Amira absent. The secondary steel package remains unreleased. Wei Lin noted the reception ceiling and soffit details also reference the facade head condition and are held at 80 percent complete."
+        },
+        {
+          "id": "P003-M006",
+          "date": "2026-09-10",
+          "title": "Weekly site progress meeting",
+          "attendees": [
+            "Clara Nunes (Construction Manager)",
+            "Ben Orsini (Main Contractor)",
+            "Wei Lin Tan (Lead Architect)"
+          ],
+          "notes": "Structural frame topped out on 4 September. Internal fit-out to Levels 2 to 5 proceeding to programme. Ben confirmed the secondary steel subcontractor has reserved fabrication capacity for October but will release it if no order is received by 30 September. Reception floor finishes cannot be set out until the facade threshold line is fixed."
+        }
+      ],
+      "siteReports": [
+        {
+          "id": "P003-SR001",
+          "date": "2026-06-30",
+          "reportedBy": "Nurul Aziz (Site Supervisor)",
+          "area": "Ground floor reception",
+          "observations": "Reception slab poured and cured. Facade mock-up panel frame erected on the north side of the site compound and remains empty; no panel material has been delivered for mounting. Blockwork to the reception rear wall complete."
+        },
+        {
+          "id": "P003-SR002",
+          "date": "2026-07-28",
+          "reportedBy": "Nurul Aziz (Site Supervisor)",
+          "area": "Ground floor and Level 1",
+          "observations": "No facade-related activity on site. Secondary steel setting-out marks on the ground floor slab remain provisional and have not been confirmed. Level 1 partitions at 60 percent. Mock-up frame still empty."
+        },
+        {
+          "id": "P003-SR003",
+          "date": "2026-08-25",
+          "reportedBy": "Nurul Aziz (Site Supervisor)",
+          "area": "Ground floor reception",
+          "observations": "Reception floor finishes delivery arrived and is stored on Level 1. Setting-out of the reception stone floor cannot begin because the facade threshold line is not fixed. No secondary steel on site. Mock-up frame remains empty since erection in June."
+        },
+        {
+          "id": "P003-SR004",
+          "date": "2026-09-08",
+          "reportedBy": "Nurul Aziz (Site Supervisor)",
+          "area": "Levels 2-5",
+          "observations": "Structural frame topped out 4 September. Fit-out to Levels 2 to 5 progressing to programme with partitions, services first fix and raised floor on Levels 2 and 3 complete. No activity at the entrance facade zone."
+        },
+        {
+          "id": "P003-SR005",
+          "date": "2026-09-15",
+          "reportedBy": "Nurul Aziz (Site Supervisor)",
+          "area": "Ground floor reception",
+          "observations": "Reception ceiling frame partially installed, stopped short of the facade head zone pending the head condition detail. Reception floor finishes remain in storage on Level 1, now occupying space earmarked for Level 1 joinery delivery in early October."
+        }
+      ],
+      "issues": [
+        {
+          "id": "P003-I001",
+          "date": "2026-06-25",
+          "title": "Secondary steel package cannot be released for fabrication",
+          "raisedBy": "Gareth Pryce (Facade Consultant)",
+          "discipline": "Structures",
+          "description": "Design loading for the secondary steel supporting the entrance facade varies by approximately 40 percent across the three panel options under consideration. The package cannot be released for fabrication until the panel material is fixed. Fabrication capacity is currently reserved for October 2026.",
+          "status": "Open"
+        },
+        {
+          "id": "P003-I002",
+          "date": "2026-08-25",
+          "title": "Reception floor setting-out held pending facade threshold line",
+          "raisedBy": "Nurul Aziz (Site Supervisor)",
+          "discipline": "Interiors",
+          "description": "The reception stone floor cannot be set out because the facade threshold line depends on the carrier system depth, which varies with the panel material. Floor finishes are on site and in storage.",
+          "status": "Open"
+        },
+        {
+          "id": "P003-I003",
+          "date": "2026-09-15",
+          "title": "Reception ceiling detail incomplete at facade head",
+          "raisedBy": "Wei Lin Tan (Lead Architect)",
+          "discipline": "Interiors",
+          "description": "Reception ceiling and soffit details are held at approximately 80 percent because the head condition where the ceiling meets the facade cannot be resolved without the panel and carrier system selection.",
+          "status": "Open"
+        },
+        {
+          "id": "P003-I004",
+          "date": "2026-05-06",
+          "title": "Temporary site power capacity insufficient for tower crane and welfare",
+          "raisedBy": "Ben Orsini (Main Contractor)",
+          "discipline": "Temporary works",
+          "description": "Combined draw from the tower crane and site welfare exceeded the temporary supply rating during peak periods. An upgraded temporary supply was installed on 20 May 2026 and no further interruptions have been recorded.",
+          "status": "Closed",
+          "closedDate": "2026-05-20"
+        }
+      ],
+      "decisions": [
+        {
+          "id": "P003-D001",
+          "date": "2026-04-23",
+          "topic": "Entrance facade infill panel material selection",
+          "description": "Selection between honed granite, glazed terracotta baguettes and anodised aluminium rainscreen for the entrance facade infill panels. Options were presented on 23 April 2026, sampled on 14 May 2026, and a full cost comparison including secondary steel implications was issued on 12 August 2026. The client capital review did not confirm a facade allowance. No selection has been made.",
+          "owner": "Amira Haddad (Client Representative)",
+          "status": "Pending"
+        },
+        {
+          "id": "P003-D002",
+          "date": "2026-06-25",
+          "topic": "Worst-case secondary steel design as a hedge",
+          "description": "Proposal to design and fabricate the secondary steel to granite loading so the package can be released before the panel material is fixed, accepting abortive cost if a lighter panel is later selected. Discussed on 25 June 2026. No instruction has been given.",
+          "owner": "Clara Nunes (Construction Manager)",
+          "status": "Pending"
+        },
+        {
+          "id": "P003-D003",
+          "date": "2026-03-12",
+          "topic": "Raised floor void depth for workplace levels",
+          "description": "Void depth confirmed at 150mm across Levels 2 to 5 following coordination of underfloor services and power distribution. Issued to the contractor and adopted in the fit-out packages.",
+          "owner": "Wei Lin Tan (Lead Architect)",
+          "status": "Agreed",
+          "agreedDate": "2026-03-12"
+        }
+      ],
+      "changes": [
+        {
+          "id": "P003-C001",
+          "date": "2026-07-15",
+          "title": "Staff dining level servery layout revised",
+          "description": "Servery reconfigured from a single linear counter to two island counters following a client operational review. Mechanical extract and drainage adjusted to suit. Instruction issued and absorbed within the fit-out programme.",
+          "origin": "Client request"
+        }
+      ],
+      "dependencies": [
+        {
+          "id": "P003-DEP001",
+          "description": "Secondary steel fabrication follows confirmation of the entrance facade panel material, as design loading depends on panel weight.",
+          "predecessor": "Facade panel material selection",
+          "successor": "Secondary steel fabrication",
+          "note": "Fabrication capacity reserved for October 2026 and released if unordered by 30 September 2026."
+        },
+        {
+          "id": "P003-DEP002",
+          "description": "Facade installation follows delivery of panels and erection of the secondary steel.",
+          "predecessor": "Secondary steel erection and panel delivery",
+          "successor": "Entrance facade installation",
+          "note": "Facade installation window in the programme opens 2 November 2026."
+        },
+        {
+          "id": "P003-DEP003",
+          "description": "Reception floor finishes setting-out follows fixing of the facade threshold line, which is determined by the carrier system depth.",
+          "predecessor": "Facade threshold line fixed",
+          "successor": "Reception floor finishes setting-out",
+          "note": "Floor finishes delivered to site and in storage since 25 August 2026."
+        },
+        {
+          "id": "P003-DEP004",
+          "description": "Workplace fit-out on Levels 2 to 5 follows structural frame completion and is independent of the entrance facade package.",
+          "predecessor": "Structural frame completion",
+          "successor": "Levels 2-5 fit-out",
+          "note": "Frame topped out 4 September 2026, fit-out proceeding to programme."
+        }
+      ],
+      "contractorUpdates": [
+        {
+          "id": "P003-CU001",
+          "date": "2026-07-31",
+          "contractor": "Orsini Construction Asia",
+          "trade": "Main contractor",
+          "update": "We have no instruction on the entrance facade panel material. Our secondary steel subcontractor requires a released package six weeks before erection. Please advise when a selection is expected."
+        },
+        {
+          "id": "P003-CU002",
+          "date": "2026-09-09",
+          "contractor": "Orsini Construction Asia",
+          "trade": "Main contractor",
+          "update": "The secondary steel subcontractor has reserved October fabrication capacity on an informal basis and will release it to other work if no order is placed by 30 September 2026. We still hold no panel material selection."
+        },
+        {
+          "id": "P003-CU003",
+          "date": "2026-09-16",
+          "contractor": "Orsini Construction Asia",
+          "trade": "Main contractor",
+          "update": "Reception floor finishes stored on Level 1 are occupying the area allocated for Level 1 joinery arriving in early October. If the reception floor cannot be set out we will need an alternative storage arrangement or a deferred joinery delivery."
+        },
+        {
+          "id": "P003-CU004",
+          "date": "2026-09-05",
+          "contractor": "Lion City Interiors",
+          "trade": "Fit-out",
+          "update": "Levels 2 and 3 raised floor and services first fix complete. Levels 4 and 5 partitions progressing. No dependency on the entrance facade for these levels."
+        }
+      ],
+      "consultantUpdates": [
+        {
+          "id": "P003-CO001",
+          "date": "2026-05-16",
+          "consultant": "Gareth Pryce",
+          "discipline": "Facade engineering",
+          "update": "Indicative lead times from order confirmation: honed granite 18 weeks, glazed terracotta 14 weeks, anodised aluminium 10 weeks. Carrier system and bracket design differ between the three and cannot be developed before the material is fixed."
+        },
+        {
+          "id": "P003-CO002",
+          "date": "2026-08-12",
+          "consultant": "Gareth Pryce",
+          "discipline": "Facade engineering",
+          "update": "Cost comparison issued covering panel supply, carrier system and secondary steel for all three options. Note that the secondary steel design loading differs by approximately 40 percent between the granite and aluminium options, which is reflected in the comparison."
+        },
+        {
+          "id": "P003-CO003",
+          "date": "2026-09-12",
+          "consultant": "Wei Lin Tan",
+          "discipline": "Architecture",
+          "update": "Reception ceiling and soffit package is held at approximately 80 percent pending the facade head condition. We can complete the remaining detailing within two weeks of a panel material selection being confirmed."
+        }
+      ]
+    },
+    {
+      "id": "P004",
+      "name": "Clerkenwell Studio Campus",
+      "type": "Creative Studio Fit-Out",
+      "location": "London, United Kingdom",
+      "client": "Northgate Media Group",
+      "status": "Construction",
+      "description": "Fit-out of a four-storey warehouse conversion into creative studio space, including production suites, editing rooms, a broadcast-capable presentation space and a roof terrace pavilion.",
+      "plannedCompletion": "2027-01-29",
+      "currentCompletion": "2027-02-19",
+      "meetings": [
+        {
+          "id": "P004-M001",
+          "date": "2026-05-07",
+          "title": "Procurement review meeting",
+          "attendees": [
+            "Sofia Almeida (Construction Manager)",
+            "Ryan Fitzgerald (Main Contractor)",
+            "Nina Berglund (Lighting Designer)",
+            "Oliver Kent (Cost Manager)"
+          ],
+          "notes": "Nina advised that the specified linear pendant fixture for the production suites has been discontinued by the manufacturer with no direct replacement. Three substitution candidates were tabled. Ryan noted the lighting order was due to be placed on 22 May to hold the installation sequence. Oliver flagged that two of the three candidates carry a cost uplift. Substitution to be confirmed at the next meeting."
+        },
+        {
+          "id": "P004-M002",
+          "date": "2026-05-28",
+          "title": "Procurement review meeting",
+          "attendees": [
+            "Sofia Almeida (Construction Manager)",
+            "Ryan Fitzgerald (Main Contractor)",
+            "Nina Berglund (Lighting Designer)",
+            "Oliver Kent (Cost Manager)"
+          ],
+          "notes": "Substitute fixture confirmed and instructed. Nina confirmed the photometric performance is equivalent. Oliver recorded a cost uplift of approximately 4 percent on the lighting package. Ryan noted the substitute carries a 16 week lead time against 11 weeks for the original, placing delivery in mid-September rather than mid-August. Sofia asked for the impact on the second fix sequence to be assessed."
+        },
+        {
+          "id": "P004-M003",
+          "date": "2026-06-18",
+          "title": "Weekly site progress meeting",
+          "attendees": [
+            "Sofia Almeida (Construction Manager)",
+            "Ryan Fitzgerald (Main Contractor)",
+            "Marcus Webb (Client Representative)"
+          ],
+          "notes": "Marcus requested the addition of four enclosed meeting rooms on Level 2, replacing an area previously shown as open desking. Sofia noted this affects partitions, lighting layout, small power, sprinkler heads and the mechanical supply and extract on that floor. Ryan advised Level 2 partition works are due to start 13 July and a design change after that date would mean rework. Marcus to confirm within two weeks."
+        },
+        {
+          "id": "P004-M004",
+          "date": "2026-07-16",
+          "title": "Weekly site progress meeting",
+          "attendees": [
+            "Sofia Almeida (Construction Manager)",
+            "Ryan Fitzgerald (Main Contractor)",
+            "Marcus Webb (Client Representative)",
+            "Oliver Kent (Cost Manager)"
+          ],
+          "notes": "Level 2 additional meeting rooms confirmed by the client on 14 July, two days after partition works commenced. Ryan reported that setting-out for the affected zone has been stopped and approximately 18 linear metres of stud already erected will need to be removed. Revised layouts issued 15 July. Oliver to price the variation including abortive work. Sofia noted the Level 2 services coordination must be reissued before first fix resumes."
+        },
+        {
+          "id": "P004-M005",
+          "date": "2026-08-20",
+          "title": "Procurement and logistics meeting",
+          "attendees": [
+            "Sofia Almeida (Construction Manager)",
+            "Ryan Fitzgerald (Main Contractor)",
+            "Priyanka Deshmukh (Logistics Coordinator)"
+          ],
+          "notes": "Priyanka reported that the raised access floor shipment has been delayed in transit. The vessel was rerouted and the revised port arrival is 21 September against a planned 31 August. Ryan noted raised floor installation precedes services second fix on Levels 1 and 2 and that the two week slip consumes the remaining float on that sequence. Sofia asked for a re-sequencing proposal."
+        },
+        {
+          "id": "P004-M006",
+          "date": "2026-09-17",
+          "title": "Programme review meeting",
+          "attendees": [
+            "Sofia Almeida (Construction Manager)",
+            "Ryan Fitzgerald (Main Contractor)",
+            "Oliver Kent (Cost Manager)",
+            "Marcus Webb (Client Representative)"
+          ],
+          "notes": "Ryan presented a revised programme moving practical completion from 29 January 2027 to 19 February 2027. Contributing items listed were the lighting substitution lead time, the Level 2 meeting room variation and the raised access floor shipping delay. Marcus asked whether the commissioning and client witness testing window is still adequate. Ryan confirmed the revised programme retains three weeks for commissioning against the four weeks in the baseline. No decision taken on whether to recover the week."
+        }
+      ],
+      "siteReports": [
+        {
+          "id": "P004-SR001",
+          "date": "2026-07-14",
+          "reportedBy": "Callum Reid (Site Supervisor)",
+          "area": "Level 2",
+          "observations": "Partition setting-out and stud erection commenced Level 2 on 13 July as planned. Instruction received today to stop work in the east zone pending revised layouts for additional meeting rooms. Approximately 18 linear metres of stud already erected in the affected zone."
+        },
+        {
+          "id": "P004-SR002",
+          "date": "2026-07-28",
+          "reportedBy": "Callum Reid (Site Supervisor)",
+          "area": "Level 2",
+          "observations": "East zone stud removed and set aside for reuse. Revised layouts received 15 July. Partition works recommenced in the east zone on 27 July. Services first fix in the east zone remains held pending reissued coordination drawings."
+        },
+        {
+          "id": "P004-SR003",
+          "date": "2026-08-25",
+          "reportedBy": "Callum Reid (Site Supervisor)",
+          "area": "Levels 1-2",
+          "observations": "Raised access floor pedestals for Levels 1 and 2 not delivered on the planned date of 31 August. Ground floor production suite partitions complete. Level 3 partitions at 45 percent. Services first fix on Level 1 complete, Level 2 east zone still held."
+        },
+        {
+          "id": "P004-SR004",
+          "date": "2026-09-15",
+          "reportedBy": "Callum Reid (Site Supervisor)",
+          "area": "Levels 1-3",
+          "observations": "No raised access floor material on site. Services second fix on Levels 1 and 2 cannot start. Level 2 east zone services first fix recommenced on 8 September following receipt of reissued coordination. Level 3 partitions complete. Roof terrace pavilion steel erected."
+        },
+        {
+          "id": "P004-SR005",
+          "date": "2026-09-22",
+          "reportedBy": "Callum Reid (Site Supervisor)",
+          "area": "Levels 1-2",
+          "observations": "Raised access floor shipment confirmed arrived at port 21 September, customs clearance in progress, site delivery expected 28 September. Lighting fixtures for the production suites not yet delivered. Trades on Levels 1 and 2 working on ceiling grid and wall finishes as holding activities."
+        }
+      ],
+      "issues": [
+        {
+          "id": "P004-I001",
+          "date": "2026-05-07",
+          "title": "Specified production suite pendant fixture discontinued",
+          "raisedBy": "Nina Berglund (Lighting Designer)",
+          "discipline": "Lighting",
+          "description": "The specified linear pendant fixture for the production suites has been discontinued by the manufacturer with no direct replacement available. Three substitution candidates were assessed and a substitute was instructed on 28 May 2026.",
+          "status": "Closed",
+          "closedDate": "2026-05-28"
+        },
+        {
+          "id": "P004-I002",
+          "date": "2026-07-14",
+          "title": "Abortive partition work in Level 2 east zone",
+          "raisedBy": "Callum Reid (Site Supervisor)",
+          "discipline": "Interiors",
+          "description": "Approximately 18 linear metres of stud erected on Level 2 required removal following the instruction to add four enclosed meeting rooms two days after partition works commenced. Stud set aside for reuse. Variation pricing in progress.",
+          "status": "Open"
+        },
+        {
+          "id": "P004-I003",
+          "date": "2026-08-20",
+          "title": "Raised access floor shipment delayed in transit",
+          "raisedBy": "Priyanka Deshmukh (Logistics Coordinator)",
+          "discipline": "Logistics",
+          "description": "The raised access floor shipment for Levels 1 and 2 was rerouted in transit. Revised port arrival 21 September 2026 against a planned 31 August 2026. Raised floor installation precedes services second fix on those levels.",
+          "status": "Open"
+        },
+        {
+          "id": "P004-I004",
+          "date": "2026-09-17",
+          "title": "Commissioning window reduced in revised programme",
+          "raisedBy": "Marcus Webb (Client Representative)",
+          "discipline": "Programme",
+          "description": "The revised programme retains three weeks for commissioning and client witness testing against four weeks in the baseline. The broadcast presentation space requires witness testing of audio visual and acoustic performance within that window.",
+          "status": "Open"
+        }
+      ],
+      "decisions": [
+        {
+          "id": "P004-D001",
+          "date": "2026-05-28",
+          "topic": "Production suite lighting fixture substitution",
+          "description": "Substitute linear pendant fixture confirmed and instructed following discontinuation of the specified product. Photometric performance assessed as equivalent. Cost uplift of approximately 4 percent on the lighting package recorded and lead time of 16 weeks accepted.",
+          "owner": "Nina Berglund (Lighting Designer)",
+          "status": "Agreed",
+          "agreedDate": "2026-05-28"
+        },
+        {
+          "id": "P004-D002",
+          "date": "2026-07-14",
+          "topic": "Addition of four enclosed meeting rooms on Level 2",
+          "description": "Client confirmed the addition of four enclosed meeting rooms on Level 2 in place of open desking. Revised layouts issued 15 July 2026. Affects partitions, lighting, small power, sprinkler heads and mechanical supply and extract on that floor.",
+          "owner": "Marcus Webb (Client Representative)",
+          "status": "Agreed",
+          "agreedDate": "2026-07-14"
+        },
+        {
+          "id": "P004-D003",
+          "date": "2026-09-17",
+          "topic": "Whether to recover the reduced commissioning week",
+          "description": "The revised programme reduces the commissioning and witness testing window from four weeks to three. Options discussed included extending practical completion further or accelerating the second fix sequence. No decision was taken at the programme review.",
+          "owner": "Sofia Almeida (Construction Manager)",
+          "status": "Pending"
+        }
+      ],
+      "changes": [
+        {
+          "id": "P004-C001",
+          "date": "2026-05-28",
+          "title": "Lighting fixture substitution instructed",
+          "description": "Substitute production suite pendant fixture instructed following manufacturer discontinuation. Cost uplift approximately 4 percent on the lighting package. Lead time increases from 11 weeks to 16 weeks, moving delivery from mid-August to mid-September 2026.",
+          "origin": "Procurement - product discontinued"
+        },
+        {
+          "id": "P004-C002",
+          "date": "2026-07-14",
+          "title": "Level 2 additional enclosed meeting rooms",
+          "description": "Four enclosed meeting rooms added on Level 2 replacing open desking. Instructed two days after Level 2 partition works commenced, requiring removal of erected stud and reissue of services coordination for the affected zone. Variation being priced including abortive work.",
+          "origin": "Client request"
+        },
+        {
+          "id": "P004-C003",
+          "date": "2026-08-20",
+          "title": "Raised access floor delivery date revised",
+          "description": "Raised access floor port arrival revised from 31 August 2026 to 21 September 2026 following vessel rerouting. Site delivery expected 28 September 2026.",
+          "origin": "Supply chain - shipping delay"
+        },
+        {
+          "id": "P004-C004",
+          "date": "2026-09-17",
+          "title": "Practical completion date revised",
+          "description": "Practical completion moved from 29 January 2027 to 19 February 2027. Contributing items recorded as the lighting substitution lead time, the Level 2 meeting room variation and the raised access floor shipping delay.",
+          "origin": "Programme revision"
+        }
+      ],
+      "dependencies": [
+        {
+          "id": "P004-DEP001",
+          "description": "Services second fix on Levels 1 and 2 follows raised access floor installation on those levels.",
+          "predecessor": "Raised access floor installation Levels 1-2",
+          "successor": "Services second fix Levels 1-2",
+          "note": "Raised floor material expected on site 28 September 2026."
+        },
+        {
+          "id": "P004-DEP002",
+          "description": "Production suite lighting installation follows ceiling grid completion and fixture delivery.",
+          "predecessor": "Fixture delivery and ceiling grid completion",
+          "successor": "Production suite lighting installation",
+          "note": "Substitute fixture delivery expected mid-September 2026."
+        },
+        {
+          "id": "P004-DEP003",
+          "description": "Level 2 east zone services first fix follows issue of revised services coordination for the added meeting rooms.",
+          "predecessor": "Reissued Level 2 services coordination",
+          "successor": "Level 2 east zone services first fix",
+          "note": "Coordination reissued and first fix recommenced 8 September 2026."
+        },
+        {
+          "id": "P004-DEP004",
+          "description": "Client witness testing of the broadcast presentation space follows completion of commissioning.",
+          "predecessor": "Commissioning",
+          "successor": "Client witness testing",
+          "note": "Commissioning window reduced from four weeks to three in the revised programme."
+        }
+      ],
+      "contractorUpdates": [
+        {
+          "id": "P004-CU001",
+          "date": "2026-06-02",
+          "contractor": "Fitzgerald Contracting",
+          "trade": "Main contractor",
+          "update": "Substitute lighting order placed 1 June. Confirmed 16 week lead time places delivery in the week commencing 14 September. We have re-sequenced ceiling works on the production suites to suit but this removes the float we held on that area."
+        },
+        {
+          "id": "P004-CU002",
+          "date": "2026-07-20",
+          "contractor": "Fitzgerald Contracting",
+          "trade": "Main contractor",
+          "update": "Level 2 east zone stud removed and recommencement planned for 27 July. We need the reissued services coordination for the meeting room zone before first fix can restart. Abortive work is being recorded for the variation."
+        },
+        {
+          "id": "P004-CU003",
+          "date": "2026-09-02",
+          "contractor": "Fitzgerald Contracting",
+          "trade": "Main contractor",
+          "update": "With the raised floor now expected late September we have no float left on the Levels 1 and 2 second fix sequence. We are holding trades on ceiling grid and wall finishes but that work will be exhausted within two weeks."
+        },
+        {
+          "id": "P004-CU004",
+          "date": "2026-09-18",
+          "contractor": "Fitzgerald Contracting",
+          "trade": "Main contractor",
+          "update": "Revised programme issued showing practical completion 19 February 2027. Please note the commissioning allowance is now three weeks. If witness testing of the presentation space requires longer we would need to revisit the completion date again."
+        },
+        {
+          "id": "P004-CU005",
+          "date": "2026-09-10",
+          "contractor": "Camden Steel Fabrication",
+          "trade": "Structural steel",
+          "update": "Roof terrace pavilion steel erected and grouted. No outstanding items on our package."
+        }
+      ],
+      "consultantUpdates": [
+        {
+          "id": "P004-CO001",
+          "date": "2026-05-26",
+          "consultant": "Nina Berglund",
+          "discipline": "Lighting design",
+          "update": "Substitute fixture assessed against the original specification. Output, distribution and colour rendering are equivalent. Note the substitute has a 16 week lead time against 11 weeks for the discontinued product."
+        },
+        {
+          "id": "P004-CO002",
+          "date": "2026-07-22",
+          "consultant": "Devon Marsh",
+          "discipline": "Mechanical engineering",
+          "update": "Level 2 supply and extract has been recoordinated for the four added meeting rooms. Reissued drawings cover the east zone only. Sprinkler head positions in the affected zone have been adjusted and reissued by the fire engineer separately."
+        },
+        {
+          "id": "P004-CO003",
+          "date": "2026-09-19",
+          "consultant": "Oliver Kent",
+          "discipline": "Cost management",
+          "update": "Variation for the Level 2 meeting rooms including abortive partition work is being valued. The lighting substitution uplift of approximately 4 percent on the package has been recorded. No valuation has yet been prepared for any time-related cost arising from the revised completion date."
+        }
+      ]
+    },
+    {
+      "id": "P005",
+      "name": "Lower Parel Innovation Hub",
+      "type": "Flexible Workplace",
+      "location": "Mumbai, India",
+      "client": "Adyant Ventures",
+      "status": "Construction",
+      "description": "Fit-out of three floors of flexible workplace including collaboration studios, a members lounge, quiet rooms and a ground floor cafe, delivered within an existing mixed-use building.",
+      "plannedCompletion": "2027-04-16",
+      "currentCompletion": "2027-04-16",
+      "meetings": [
+        {
+          "id": "P005-M001",
+          "date": "2026-04-16",
+          "title": "Weekly site progress meeting - week 16",
+          "attendees": [
+            "Ishaan Verma (Construction Manager)",
+            "Rohan Bhatt (Main Contractor)",
+            "Leela Krishnan (Interior Designer)"
+          ],
+          "notes": "Levels 2 to 4 strip-out complete and signed off. Screed to Level 2 poured on 8 April. Rohan confirmed partitions start 27 April. Leela confirmed all finishes samples approved and no outstanding design queries. Programme tracking to baseline."
+        },
+        {
+          "id": "P005-M002",
+          "date": "2026-06-04",
+          "title": "Weekly site progress meeting - week 23",
+          "attendees": [
+            "Ishaan Verma (Construction Manager)",
+            "Rohan Bhatt (Main Contractor)",
+            "Leela Krishnan (Interior Designer)",
+            "Deepa Nair (Flooring Subcontractor)"
+          ],
+          "notes": "Deepa reported elevated moisture readings in the Level 2 screed during pre-installation testing for the engineered timber flooring. Readings between 82 and 88 percent relative humidity against a specification limit of 75 percent. Timber flooring installation held. Rohan to arrange a full moisture survey and investigate the cause. Leela noted the timber is on site and must be stored in controlled conditions."
+        },
+        {
+          "id": "P005-M003",
+          "date": "2026-06-25",
+          "title": "Weekly site progress meeting - week 26",
+          "attendees": [
+            "Ishaan Verma (Construction Manager)",
+            "Rohan Bhatt (Main Contractor)",
+            "Deepa Nair (Flooring Subcontractor)",
+            "Sandeep Rao (Building Surveyor)"
+          ],
+          "notes": "Sandeep presented the moisture survey. Two contributing causes identified: the screed had not reached equilibrium within the assumed drying period, and a temporary water supply line serving the Level 3 welfare point was found leaking at a compression joint above the Level 2 slab, wetting the screed locally at grid B-D. The leaking joint was repaired on 18 June. Dehumidification and forced air drying installed on Level 2 from 19 June. Retesting at fortnightly intervals agreed."
+        },
+        {
+          "id": "P005-M004",
+          "date": "2026-07-23",
+          "title": "Weekly site progress meeting - week 30",
+          "attendees": [
+            "Ishaan Verma (Construction Manager)",
+            "Rohan Bhatt (Main Contractor)",
+            "Deepa Nair (Flooring Subcontractor)",
+            "Sandeep Rao (Building Surveyor)"
+          ],
+          "notes": "Sandeep confirmed readings across Level 2 now between 68 and 72 percent relative humidity, within the 75 percent specification limit, including at grid B-D where the leak occurred. Two consecutive fortnightly surveys have been within tolerance. Deepa accepted the substrate and will commence timber flooring on 27 July. Dehumidification to be removed once installation starts. Ishaan asked for the closing survey to be filed with the handover documentation."
+        },
+        {
+          "id": "P005-M005",
+          "date": "2026-08-27",
+          "title": "Weekly site progress meeting - week 35",
+          "attendees": [
+            "Ishaan Verma (Construction Manager)",
+            "Rohan Bhatt (Main Contractor)",
+            "Leela Krishnan (Interior Designer)"
+          ],
+          "notes": "Level 2 timber flooring complete and accepted by the designer on 20 August. No defects recorded at inspection. Level 3 partitions complete and services first fix underway. Level 4 partitions at 70 percent. Rohan confirmed the programme remains aligned to the baseline completion date of 16 April 2027."
+        },
+        {
+          "id": "P005-M006",
+          "date": "2026-09-17",
+          "title": "Weekly site progress meeting - week 38",
+          "attendees": [
+            "Ishaan Verma (Construction Manager)",
+            "Rohan Bhatt (Main Contractor)",
+            "Leela Krishnan (Interior Designer)"
+          ],
+          "notes": "Level 3 services first fix complete, ceiling grid starting 21 September. Level 4 partitions complete. Ground floor cafe shell works progressing, joinery survey booked for 5 October. Leela confirmed the members lounge furniture order is placed with delivery in January 2027. No open design queries. Programme tracking to baseline."
+        }
+      ],
+      "siteReports": [
+        {
+          "id": "P005-SR001",
+          "date": "2026-06-02",
+          "reportedBy": "Farah Sheikh (Site Supervisor)",
+          "area": "Level 2",
+          "observations": "Pre-installation moisture testing carried out on the Level 2 screed by the flooring subcontractor. Readings between 82 and 88 percent relative humidity recorded, above the 75 percent specification limit. Highest readings concentrated around grid B to D. Timber flooring installation not released."
+        },
+        {
+          "id": "P005-SR002",
+          "date": "2026-06-19",
+          "reportedBy": "Farah Sheikh (Site Supervisor)",
+          "area": "Levels 2-3",
+          "observations": "Leaking compression joint on the temporary water supply line above the Level 2 slab repaired 18 June. Dehumidification units and forced air drying installed across Level 2 today. Level 3 partition works continuing unaffected."
+        },
+        {
+          "id": "P005-SR003",
+          "date": "2026-07-07",
+          "reportedBy": "Farah Sheikh (Site Supervisor)",
+          "area": "Level 2",
+          "observations": "First follow-up moisture survey since drying commenced. Readings between 73 and 78 percent relative humidity, improving but not yet consistently within tolerance. Dehumidification to continue. Timber remains in controlled storage on Level 4."
+        },
+        {
+          "id": "P005-SR004",
+          "date": "2026-07-21",
+          "reportedBy": "Farah Sheikh (Site Supervisor)",
+          "area": "Level 2",
+          "observations": "Second follow-up moisture survey. Readings between 68 and 72 percent relative humidity across all test points including grid B to D. Within the 75 percent specification limit. Substrate accepted by the flooring subcontractor. Timber flooring installation to commence 27 July."
+        },
+        {
+          "id": "P005-SR005",
+          "date": "2026-08-20",
+          "reportedBy": "Farah Sheikh (Site Supervisor)",
+          "area": "Level 2",
+          "observations": "Level 2 engineered timber flooring installation complete. Joint inspection carried out with the interior designer and flooring subcontractor. No cupping, lifting or adhesion defects observed. Floor accepted. Dehumidification equipment removed from site."
+        },
+        {
+          "id": "P005-SR006",
+          "date": "2026-09-15",
+          "reportedBy": "Farah Sheikh (Site Supervisor)",
+          "area": "Levels 2-4",
+          "observations": "Level 2 flooring in good condition at four week inspection, no movement or moisture-related defects observed. Level 3 services first fix complete. Level 4 partitions complete and ready for first fix. Ground floor cafe shell works progressing to programme."
+        },
+        {
+          "id": "P005-SR007",
+          "date": "2026-09-22",
+          "reportedBy": "Farah Sheikh (Site Supervisor)",
+          "area": "Levels 3-4",
+          "observations": "Level 3 ceiling grid installation commenced 21 September. Level 4 first fix started. Quiet room acoustic panels delivered and stored on Level 4. Cafe joinery survey confirmed for 5 October. No new defects raised this week."
+        }
+      ],
+      "issues": [
+        {
+          "id": "P005-I001",
+          "date": "2026-06-02",
+          "title": "Elevated screed moisture readings on Level 2",
+          "raisedBy": "Deepa Nair (Flooring Subcontractor)",
+          "discipline": "Finishes",
+          "description": "Pre-installation moisture testing recorded 82 to 88 percent relative humidity in the Level 2 screed against a 75 percent specification limit, holding timber flooring installation. A survey identified incomplete screed drying and a leaking temporary water line above the slab at grid B-D. The line was repaired on 18 June 2026 and dehumidification installed on 19 June. Two consecutive fortnightly surveys returned readings within tolerance and the substrate was accepted on 21 July 2026. Flooring was installed and accepted on 20 August 2026 with no defects.",
+          "status": "Closed",
+          "closedDate": "2026-07-21"
+        },
+        {
+          "id": "P005-I002",
+          "date": "2026-05-12",
+          "title": "Quiet room partition acoustic performance below target in mock-up",
+          "raisedBy": "Leela Krishnan (Interior Designer)",
+          "discipline": "Acoustics",
+          "description": "A mock-up quiet room partition tested at 41 dB against a 45 dB target. Investigation found the head detail had no acoustic seal at the deck soffit. The detail was revised to include a continuous seal and a retest on 3 June 2026 achieved 47 dB. The revised detail was adopted for all quiet rooms.",
+          "status": "Closed",
+          "closedDate": "2026-06-03"
+        },
+        {
+          "id": "P005-I003",
+          "date": "2026-09-15",
+          "title": "Cafe joinery survey not yet carried out",
+          "raisedBy": "Rohan Bhatt (Main Contractor)",
+          "discipline": "Joinery",
+          "description": "The ground floor cafe joinery survey has not been carried out. It is booked for 5 October 2026, which is within the lead time required for the joinery package against the current programme.",
+          "status": "Open"
+        }
+      ],
+      "decisions": [
+        {
+          "id": "P005-D001",
+          "date": "2026-06-25",
+          "topic": "Remediation approach for Level 2 screed moisture",
+          "description": "Agreed to repair the leaking temporary water line, install dehumidification and forced air drying across Level 2, and retest at fortnightly intervals until readings fall within the 75 percent specification limit. Flooring installation to be released only on an accepted substrate.",
+          "owner": "Ishaan Verma (Construction Manager)",
+          "status": "Agreed",
+          "agreedDate": "2026-06-25"
+        },
+        {
+          "id": "P005-D002",
+          "date": "2026-05-26",
+          "topic": "Quiet room partition head detail revision",
+          "description": "Head detail revised to include a continuous acoustic seal at the deck soffit following the mock-up test result. Adopted for all quiet rooms across Levels 2 to 4.",
+          "owner": "Leela Krishnan (Interior Designer)",
+          "status": "Agreed",
+          "agreedDate": "2026-05-26"
+        },
+        {
+          "id": "P005-D003",
+          "date": "2026-08-27",
+          "topic": "Members lounge furniture specification",
+          "description": "Furniture specification confirmed for the members lounge and the order placed with delivery scheduled for January 2027, within the programme requirement.",
+          "owner": "Leela Krishnan (Interior Designer)",
+          "status": "Agreed",
+          "agreedDate": "2026-08-27"
+        }
+      ],
+      "changes": [
+        {
+          "id": "P005-C001",
+          "date": "2026-06-25",
+          "title": "Temporary dehumidification to Level 2",
+          "description": "Dehumidification and forced air drying installed on Level 2 to bring screed moisture within the specification limit. Equipment hired for six weeks and removed on 20 August 2026 once flooring installation commenced.",
+          "origin": "Remediation works"
+        },
+        {
+          "id": "P005-C002",
+          "date": "2026-05-26",
+          "title": "Quiet room head detail revised",
+          "description": "Acoustic seal added to the quiet room partition head detail across all floors following mock-up testing. Cost absorbed within the partition package.",
+          "origin": "Design revision"
+        }
+      ],
+      "dependencies": [
+        {
+          "id": "P005-DEP001",
+          "description": "Timber flooring installation on Level 2 follows acceptance of the screed substrate against the moisture specification.",
+          "predecessor": "Screed moisture within 75 percent specification limit",
+          "successor": "Level 2 timber flooring installation",
+          "note": "Substrate accepted 21 July 2026, flooring installed and accepted 20 August 2026."
+        },
+        {
+          "id": "P005-DEP002",
+          "description": "Ceiling grid installation on each level follows services first fix completion on that level.",
+          "predecessor": "Services first fix",
+          "successor": "Ceiling grid installation",
+          "note": "Level 3 first fix complete, ceiling grid commenced 21 September 2026."
+        },
+        {
+          "id": "P005-DEP003",
+          "description": "Cafe joinery fabrication follows the site dimensional survey of the ground floor cafe.",
+          "predecessor": "Cafe joinery survey",
+          "successor": "Cafe joinery fabrication",
+          "note": "Survey booked for 5 October 2026."
+        }
+      ],
+      "contractorUpdates": [
+        {
+          "id": "P005-CU001",
+          "date": "2026-06-22",
+          "contractor": "Bhatt Interiors Mumbai",
+          "trade": "Main contractor",
+          "update": "Temporary water line joint above the Level 2 slab repaired on 18 June. Dehumidification running across Level 2 since 19 June. We will retest fortnightly and report readings to the flooring subcontractor."
+        },
+        {
+          "id": "P005-CU002",
+          "date": "2026-07-22",
+          "contractor": "Bhatt Interiors Mumbai",
+          "trade": "Main contractor",
+          "update": "Second survey confirms Level 2 readings within the 75 percent limit at all test points. Substrate accepted by the flooring subcontractor. Timber flooring starts 27 July. This item is now closed from our side."
+        },
+        {
+          "id": "P005-CU003",
+          "date": "2026-08-21",
+          "contractor": "Bhatt Interiors Mumbai",
+          "trade": "Main contractor",
+          "update": "Level 2 timber flooring complete and accepted with no defects at joint inspection. Dehumidification equipment off hire and removed. Programme remains aligned to the baseline completion date."
+        },
+        {
+          "id": "P005-CU004",
+          "date": "2026-09-18",
+          "contractor": "Bhatt Interiors Mumbai",
+          "trade": "Main contractor",
+          "update": "Level 3 ceiling grid started, Level 4 first fix underway. Cafe joinery survey on 5 October remains within the package lead time. No current delays to report."
+        },
+        {
+          "id": "P005-CU005",
+          "date": "2026-09-08",
+          "contractor": "Deepa Flooring Contracts",
+          "trade": "Flooring",
+          "update": "Four week post-installation inspection of the Level 2 timber floor carried out. No cupping, gapping or adhesion issues. Floor performing as expected. Our package on Level 2 is complete."
+        }
+      ],
+      "consultantUpdates": [
+        {
+          "id": "P005-CO001",
+          "date": "2026-06-24",
+          "consultant": "Sandeep Rao",
+          "discipline": "Building surveying",
+          "update": "Moisture survey of the Level 2 screed complete. Two contributing causes identified: incomplete drying within the assumed period, and localised wetting at grid B-D from a leaking temporary water supply joint above the slab. Recommend repair of the joint, dehumidification and fortnightly retesting until readings are consistently below 75 percent relative humidity."
+        },
+        {
+          "id": "P005-CO002",
+          "date": "2026-07-22",
+          "consultant": "Sandeep Rao",
+          "discipline": "Building surveying",
+          "update": "Closing survey of the Level 2 screed. All test points between 68 and 72 percent relative humidity, including the previously affected grid B-D zone. Readings are within the 75 percent specification limit across two consecutive surveys. The substrate is suitable for engineered timber flooring. No further monitoring recommended."
+        },
+        {
+          "id": "P005-CO003",
+          "date": "2026-06-05",
+          "consultant": "Leela Krishnan",
+          "discipline": "Interior design",
+          "update": "Quiet room partition retest achieved 47 dB against the 45 dB target following addition of the continuous acoustic seal at the head detail. The revised detail is adopted across all quiet rooms. No further acoustic testing required for this element."
+        }
+      ]
+    }
+  ]
+}
