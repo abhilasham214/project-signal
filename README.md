@@ -88,6 +88,17 @@ If a change weakens any of those three clauses, it is the wrong change.
 6. **Ask about this project** in the chat panel.
 7. **Evaluation** at `/evaluation` compares what the AI found against the answer key and lets you filter by the decisions people made.
 
+```mermaid
+flowchart LR
+    A["Projects list<br/>see what is analysed"] --> B["Open dashboard"]
+    B --> C["Analyze project"]
+    C --> D["Filter signals<br/>category, severity, status"]
+    D --> E["Open a signal<br/>read the real record text"]
+    E --> F["Decide<br/>Confirm / Investigate / Dismiss + note"]
+    F --> G["Evaluation<br/>compare with the answer key"]
+    B --> H["Ask the project chat"]
+```
+
 ## Demo / Live Deployment
 
 **Live deployment:** _not yet published_. Add the URL here after deploying (see [Vercel Deployment](#vercel-deployment)).
@@ -175,26 +186,24 @@ Screenshots are not committed yet. Capture these in demo mode and save them to `
 
 ## Architecture Overview
 
-```
-                        PROJECT SIGNAL
-                              │
-                      Selected Project  ← exactly one, always
-                              │
-                   ┌──────────┴──────────┐
-                   ↓                     ↓
-             AI Analysis             Project Chat
-                   ↓                     ↓
-            Gemini | Mock          Gemini | Mock
-                   ↓
-          Structured JSON signals
-                   ↓
-             Zod validation        ← per signal; bad ones discarded, not repaired
-                   ↓
-          Evidence validation      ← every cited id resolved in THIS project
-                   ↓                  NO EVIDENCE = NO SIGNAL
-             Human review          ← NEW / CONFIRMED / DISMISSED / INVESTIGATE
-                   ↓
-            Final decision         ← always a person
+```mermaid
+flowchart TD
+    P["Selected project<br/>exactly one, always"] --> A["AI analysis"]
+    P --> C["Project chat"]
+    A --> PR{"Provider"}
+    C --> PR
+    PR -->|"AI_PROVIDER=mock (default)"| M["Mock provider<br/>deterministic fixtures"]
+    PR -->|"AI_PROVIDER=gemini"| G["Gemini provider"]
+    M --> RAW["Raw JSON signals<br/>untrusted"]
+    G --> RAW
+    RAW --> Z["Zod validation<br/>per signal, bad ones discarded"]
+    Z --> E["Evidence validation<br/>every cited id resolved in THIS project"]
+    E -->|"no valid evidence"| D["Discarded and reported"]
+    E -->|"verified"| V["Validated signals"]
+    V --> H["Human review<br/>Confirm / Investigate / Dismiss"]
+    H --> F["Final decision<br/>always a person"]
+    V --> S[("Store<br/>file locally, Redis on Vercel")]
+    H --> S
 ```
 
 Dependencies flow one way: `app/` and `components/` → `lib/` → `data/`. `lib/` never imports from `app/` or `components/`.
@@ -235,26 +244,26 @@ docs/             DATA_MODEL · AI_DESIGN · EVALUATION · MANUAL_GEMINI_TESTING
 
 ## AI Architecture
 
-```
-projectId
-   ↓
-getProject(projectId)          → one Project, or UnknownProjectError
-   ↓
-getProvider()                  → MockAIProvider | GeminiProvider (never both, never a fallback)
-   ↓
-provider.analyzeProject(project)
-   ↓  { signals: unknown[] }    ← raw, untrusted
-   ↓
-RawSignalSchema.safeParse()    ← PER SIGNAL. Failures discarded and counted.
-   ↓
-validateSignals(project, …)    ← every citation resolved IN THIS PROJECT
-   ↓  ValidatedSignal[]
-   ↓
-mintSignalId()                 ← deterministic, content-derived
-   ↓
-saveRun()                      ← existing human reviews re-applied
-   ↓
-Human review                   ← the only thing that sets a status
+```mermaid
+sequenceDiagram
+    autonumber
+    actor U as Construction Manager
+    participant API as POST /api/analyze
+    participant AN as analyzer.ts
+    participant PV as Provider (Gemini or mock)
+    participant EV as evidence.ts
+    participant ST as Store
+    U->>API: { projectId }
+    API->>AN: runAnalysis(projectId)
+    AN->>AN: getProject(projectId), one project only
+    AN->>PV: analyzeProject(project)
+    PV-->>AN: { signals: unknown[] } raw and untrusted
+    AN->>AN: Zod parse each signal, discard and count failures
+    AN->>EV: validateSignals(project, signals)
+    EV-->>AN: ValidatedSignal[] plus discards with reasons
+    AN->>AN: mintSignalId, deterministic
+    AN->>ST: saveRun, human reviews re-applied
+    ST-->>U: run with signals and discarded list
 ```
 
 Two type names carry the whole trust model. `RawSignal` came out of a model and is untrusted. `ValidatedSignal` has had every citation resolved against the selected project and is safe to render. Nothing converts one to the other except `lib/validation/evidence.ts`.
@@ -300,6 +309,20 @@ Generation uses `temperature: 0.2`, because the task is reading records, not wri
 | Rejections counted, shown in the UI and logged | `lib/ai/analyzer.ts`, `components/dashboard/analysis-panel.tsx` |
 | Temporal rule in the prompt; P005 tests it | `lib/ai/prompts.ts`, `data/` |
 
+```mermaid
+flowchart TD
+    S["Signal proposed by the model"] --> P{"Matches the schema?<br/>at least one citation"}
+    P -->|"no"| X1["Discarded: SCHEMA_INVALID"]
+    P -->|"yes"| L["For each citation: look the id up<br/>in THIS project only"]
+    L --> Q{"Found, in this project,<br/>under the right record type?"}
+    Q -->|"no"| R["Citation rejected<br/>shown as rejected, never hidden"]
+    Q -->|"yes"| K["Citation kept<br/>record text read from the dataset,<br/>never from the model"]
+    R --> N{"Any valid citation left?"}
+    K --> N
+    N -->|"none"| X2["Discarded: NO_VALID_EVIDENCE<br/>NO EVIDENCE = NO SIGNAL"]
+    N -->|"one or more"| OK["Shown to the human<br/>with any rejected citations flagged"]
+```
+
 Three citation failures are caught: an id that does not exist, an id that belongs to another project, and a real id filed under the wrong record type. A partially valid signal survives on its good citations, and the rejected ones are displayed as rejected — visible, never silently dropped.
 
 Chat citations are resolved the same way but more leniently: an unresolvable id is dropped without discarding a useful answer, and the count is logged.
@@ -307,6 +330,22 @@ Chat citations are resolved the same way but more leniently: an unresolvable id 
 **Evidence validation proves a cited record exists and is quoted accurately. It does not prove the reasoning about it is sound.** That is exactly why a human reviews it.
 
 ## Human-in-the-Loop
+
+```mermaid
+stateDiagram-v2
+    [*] --> NEW: signal created by analysis
+    NEW --> CONFIRMED: person confirms
+    NEW --> INVESTIGATE: person wants more information
+    NEW --> DISMISSED: person dismisses
+    INVESTIGATE --> CONFIRMED
+    INVESTIGATE --> DISMISSED
+    CONFIRMED --> INVESTIGATE
+    DISMISSED --> INVESTIGATE
+    note right of NEW
+        Only a person moves a signal off NEW.
+        Re-running the analysis never resets a decision.
+    end note
+```
 
 - The AI **never sets a review status.** `saveReview` in `lib/store` is the only writer, and nothing in `lib/ai` may call it.
 - `POST /api/review` imports no provider, analyzer or chat module. The separation is structural: an AI code path has no way to reach the function that records a decision.
@@ -463,6 +502,16 @@ Changing an environment variable needs a **redeploy** to take effect.
 - **File** (`.data/store.json`): local development and tests.
 - **Redis** (Upstash, over HTTP): used automatically when Upstash credentials are present.
 
+```mermaid
+flowchart TD
+    B["First store access in this server instance"] --> D{"PROJECT_SIGNAL_DATA_DIR set?"}
+    D -->|"yes: tests"| F["File backend<br/>.data-test/store.json"]
+    D -->|"no"| U{"Upstash credentials present?"}
+    U -->|"yes"| R["Redis backend<br/>persistent, safe for many reviewers"]
+    U -->|"no"| L["File backend<br/>.data/store.json"]
+    L -.->|"on Vercel"| W["Read-only filesystem:<br/>runs and reviews are lost.<br/>Log: persistent false, store.write_failed"]
+```
+
 Redis holds two hashes, `project-signal:runs` (one field per project) and `project-signal:reviews` (one field per signal). Each save writes only its own field, so two reviewers saving at once cannot overwrite each other.
 
 **Logging.** Every event is one line of `[project-signal] {json}`. Search Vercel's runtime logs for `project-signal`, then narrow by `requestId`, or by `event`:
@@ -483,6 +532,16 @@ The API key is redacted from every logged string. Prompt text, record text, chat
 `/evaluation` compares stored analyses against `data/evaluation.json`, which lists what a careful reader should notice in each project. Think of it as marking an exam.
 
 A signal **matches** an expectation when both hold: the **category is identical**, and **at least one cited record is shared** with the expectation's key evidence. Wording is ignored, so this measures whether the same records were read together, not whether the same phrasing was produced. Each AI signal can satisfy at most one expectation.
+
+```mermaid
+flowchart TD
+    A["AI signal"] --> C{"Same category as<br/>an expected signal?"}
+    C -->|"no"| U["Unmatched AI signal<br/>listed for review, not scored as an error"]
+    C -->|"yes"| E{"At least one cited record<br/>shared with the key evidence?"}
+    E -->|"no"| U
+    E -->|"yes"| M["Matched<br/>each AI signal satisfies at most one expectation"]
+    K["Expected signal with no match"] --> X["Missed"]
+```
 
 | Figure | Meaning |
 |---|---|
