@@ -89,8 +89,10 @@ answer key did not anticipate. The prototype cannot tell those apart, so it does
 pretend to. Calling the column "potential false positives" and then counting them as
 errors would be exactly the overclaiming this product is built to avoid.
 
-In demo mode P002 produces one unmatched signal of the second kind: a low-severity
-storage-congestion observation that is well-evidenced but simply not in the key.
+In demo mode three projects each produce one unmatched signal of the second kind, all
+low-severity and well-evidenced but simply not in the key: P001 (Level 6 storage at
+capacity), P003 (stored reception floor finishes) and P004 (unvalued abortive partition
+work).
 
 ### Absences carry equal weight
 
