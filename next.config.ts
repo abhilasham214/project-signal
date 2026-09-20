@@ -2,8 +2,8 @@ import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
   reactStrictMode: true,
-  // why: Next generates its own AGENTS.md/CLAUDE.md on dev start, which would
-  // overwrite the development guide maintained in this repository.
+  // why: stops Next from generating AGENTS.md / CLAUDE.md agent-rule files in
+  // the repository on `next dev`.
   agentRules: false,
 };
 

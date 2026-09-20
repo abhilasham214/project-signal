@@ -16,34 +16,33 @@ Built for an AI Practice Consultant assignment at M Moser Associates, from the C
 4. [User Workflow](#user-workflow)
 5. [Demo / Live Deployment](#demo--live-deployment)
 6. [Demo Scenarios](#demo-scenarios)
-7. [Screenshots](#screenshots)
-8. [Architecture Overview](#architecture-overview)
-9. [Technology Stack](#technology-stack)
-10. [Project Structure](#project-structure)
-11. [AI Architecture](#ai-architecture)
-12. [AI Prompting Strategy](#ai-prompting-strategy)
-13. [Hallucination & Evidence Safeguards](#hallucination--evidence-safeguards)
-14. [Human-in-the-Loop](#human-in-the-loop)
-15. [Dataset & Data Model](#dataset--data-model)
-16. [Synthetic Data Disclaimer](#synthetic-data-disclaimer)
-17. [Gemini Integration](#gemini-integration)
-18. [Mock / Demo Mode](#mock--demo-mode)
-19. [Environment Variables](#environment-variables)
-20. [Local Installation](#local-installation)
-21. [Local Development](#local-development)
-22. [Testing](#testing)
-23. [Manual Gemini Testing](#manual-gemini-testing)
-24. [Vercel Deployment](#vercel-deployment)
-25. [Vercel Environment Variables](#vercel-environment-variables)
-26. [Production Configuration](#production-configuration)
-27. [Evaluation Methodology](#evaluation-methodology)
-28. [Limitations](#limitations)
-29. [Security Considerations](#security-considerations)
-30. [Design Decisions & Trade-offs](#design-decisions--trade-offs)
-31. [Production Improvements / Future Roadmap](#production-improvements--future-roadmap)
-32. [Known Issues](#known-issues)
-33. [License](#license)
-34. [Author / Contact](#author--contact)
+7. [Architecture Overview](#architecture-overview)
+8. [Technology Stack](#technology-stack)
+9. [Project Structure](#project-structure)
+10. [AI Architecture](#ai-architecture)
+11. [AI Prompting Strategy](#ai-prompting-strategy)
+12. [Hallucination & Evidence Safeguards](#hallucination--evidence-safeguards)
+13. [Human-in-the-Loop](#human-in-the-loop)
+14. [Dataset & Data Model](#dataset--data-model)
+15. [Synthetic Data Disclaimer](#synthetic-data-disclaimer)
+16. [Gemini Integration](#gemini-integration)
+17. [Mock / Demo Mode](#mock--demo-mode)
+18. [Environment Variables](#environment-variables)
+19. [Local Installation](#local-installation)
+20. [Local Development](#local-development)
+21. [Testing](#testing)
+22. [Manual Gemini Testing](#manual-gemini-testing)
+23. [Vercel Deployment](#vercel-deployment)
+24. [Vercel Environment Variables](#vercel-environment-variables)
+25. [Production Configuration](#production-configuration)
+26. [Evaluation Methodology](#evaluation-methodology)
+27. [Limitations](#limitations)
+28. [Security Considerations](#security-considerations)
+29. [Design Decisions & Trade-offs](#design-decisions--trade-offs)
+30. [Production Improvements / Future Roadmap](#production-improvements--future-roadmap)
+31. [Known Issues](#known-issues)
+32. [License](#license)
+33. [Author / Contact](#author--contact)
 
 ---
 
@@ -167,23 +166,6 @@ This project contains two issues that **look** concerning but were **already res
 8. Open `/evaluation`. Click the **Investigating** tab to see your decision, tagged on the signal.
 9. Ask the chat panel on any project: _"Which decisions are still unresolved?"_
 
-## Screenshots
-
-Screenshots are not committed yet. Capture these in demo mode and save them to `docs/screenshots/`, then reference them here:
-
-| Screen | Suggested file | What to show |
-|---|---|---|
-| Projects list | `docs/screenshots/projects.png` | Analysed and Not analysed tags, last-updated times |
-| Dashboard with signals | `docs/screenshots/dashboard.png` | Category tabs and filter chips |
-| Evidence guard | `docs/screenshots/evidence-guard.png` | P002's discarded-signal "Validation" card |
-| Signal detail | `docs/screenshots/signal.png` | AI signal, evidence text, review panel |
-| Evaluation | `docs/screenshots/evaluation.png` | Summary figures and human-review tabs |
-| Hover explanation | `docs/screenshots/tooltip.png` | A tooltip on a decision button |
-
-```md
-![Projects list](docs/screenshots/projects.png)
-```
-
 ## Architecture Overview
 
 ```mermaid
@@ -239,7 +221,7 @@ lib/evaluation/   The only module that reads data/evaluation.json
 lib/logging/      Structured server-side logging
 data/             projects.json (5 projects, 156 records) · evaluation.json (answer key)
 tests/            Vitest, mock provider only
-docs/             DATA_MODEL · AI_DESIGN · EVALUATION · MANUAL_GEMINI_TESTING
+docs/             DATA_MODEL · EVALUATION · MANUAL_GEMINI_TESTING
 ```
 
 ## AI Architecture
@@ -618,7 +600,7 @@ Stated plainly, because the alternative is overclaiming:
 - **A stray `package-lock.json` in your home directory** makes Next.js warn that it "ignored package-lock.json" and infer the wrong workspace root. Remove the stray file, or set `turbopack.root` in `next.config.ts`.
 - **A Gemini 502** shows only a generic message in the browser. The real reason (bad key, unavailable model, quota) is in the server log under `gemini.call.failed`.
 - **No rate limiting.** See [Security Considerations](#security-considerations).
-- **Screenshots and a live URL are not yet added** to this README.
+- **A live URL is not yet added** to this README.
 
 ## License
 
