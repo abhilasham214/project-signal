@@ -21,7 +21,7 @@
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import type { AnalysisRun } from '@/lib/ai/schemas';
-import { SignalCard } from '@/components/signals/signal-card';
+import { SignalList } from '@/components/signals/signal-list';
 import { Badge, Button, Card, CardBody, Notice, Skeleton } from '@/components/ui/primitives';
 
 /** Formats an ISO timestamp for the "last analysed" line. */
@@ -88,7 +88,7 @@ export function AnalysisPanel({
       <div className="flex flex-wrap items-center justify-between gap-3">
         <div>
           <h2 className="text-lg font-semibold tracking-tight">Potential signals</h2>
-          <p className="mt-0.5 text-xs text-[var(--color-ink-subtle)]">
+          <p className="mt-0.5 text-sm text-[var(--color-ink-subtle)]">
             {run
               ? `Last analysed ${formatTimestamp(run.analyzedAt)} using the ${
                   run.provider === 'gemini' ? 'Gemini' : 'demo'
@@ -113,8 +113,7 @@ export function AnalysisPanel({
           <CardBody>
             <p className="text-sm font-medium">Analyzing project information…</p>
             <p className="mt-1 text-sm text-[var(--color-ink-muted)]">
-              Reviewing meetings, site reports, issues, decisions, changes, dependencies and
-              contractor and consultant updates for this project.
+              Reading this project&apos;s records and checking every citation against them.
             </p>
             <div className="mt-4 space-y-2">
               <Skeleton className="h-3 w-3/4" />
@@ -134,11 +133,7 @@ export function AnalysisPanel({
       ) : null}
 
       {!isAnalyzing && run && run.signals.length > 0 ? (
-        <div className="grid gap-4">
-          {run.signals.map((signal) => (
-            <SignalCard key={signal.id} signal={signal} />
-          ))}
-        </div>
+        <SignalList signals={run.signals} />
       ) : null}
 
       {/* Rejections are surfaced, not swallowed. A reviewer should be able to

@@ -47,6 +47,48 @@ export function CardBody({ className, children }: { className?: string; children
   return <div className={cx('px-6 py-5', className)}>{children}</div>;
 }
 
+/* --------------------------------------------------------------- Tooltip */
+
+/**
+ * Hover and keyboard-focus explanation for anything that needs one.
+ *
+ * Pure CSS, so it works in server components with no JavaScript. why not the
+ * native `title` attribute: it is slow to appear, unstyled, ignores touch and
+ * keyboard, and cannot wrap long text. This shows on hover AND on focus, so
+ * keyboard users get the same explanation.
+ *
+ * `align` picks which edge the bubble hangs from, so a tooltip near the right
+ * edge of the page does not run off-screen.
+ */
+export function Tooltip({
+  text,
+  align = 'start',
+  className,
+  children,
+}: {
+  text: string;
+  align?: 'start' | 'end';
+  className?: string;
+  children: ReactNode;
+}) {
+  return (
+    <span className={cx('group/tip relative inline-flex cursor-help', className)} tabIndex={0}>
+      {children}
+      <span
+        role="tooltip"
+        className={cx(
+          'pointer-events-none invisible absolute top-full z-30 mt-2 w-64 rounded-lg bg-[var(--color-ink)] px-3 py-2',
+          'text-left text-xs font-normal normal-case leading-snug tracking-normal text-white opacity-0 shadow-lg transition-opacity',
+          'group-hover/tip:visible group-hover/tip:opacity-100 group-focus/tip:visible group-focus/tip:opacity-100',
+          align === 'end' ? 'right-0' : 'left-0',
+        )}
+      >
+        {text}
+      </span>
+    </span>
+  );
+}
+
 /* ----------------------------------------------------------------- Badge */
 
 type BadgeTone = 'neutral' | 'accent' | 'high' | 'medium' | 'low' | 'outline';
@@ -66,17 +108,19 @@ export function Badge({
   tone = 'neutral',
   className,
   title,
+  tooltipAlign,
   children,
 }: {
   tone?: BadgeTone;
   className?: string;
-  /** Native tooltip, used to explain what a status or mode actually means. */
+  /** Hover explanation of what this label means. Shown as a tooltip. */
   title?: string;
+  /** Which edge the tooltip hangs from; use `end` near the right of the page. */
+  tooltipAlign?: 'start' | 'end';
   children: ReactNode;
 }) {
-  return (
+  const badge = (
     <span
-      title={title}
       className={cx(
         'inline-flex items-center gap-1 rounded-full border px-2.5 py-0.5 text-xs font-semibold uppercase tracking-wide',
         BADGE_TONES[tone],
@@ -85,6 +129,13 @@ export function Badge({
     >
       {children}
     </span>
+  );
+  return title ? (
+    <Tooltip text={title} align={tooltipAlign}>
+      {badge}
+    </Tooltip>
+  ) : (
+    badge
   );
 }
 
@@ -147,21 +198,53 @@ export function Button({
 /* ------------------------------------------------------------------ Misc */
 
 /** Small uppercase heading used above stat groups and sections. */
-export function SectionLabel({ children }: { children: ReactNode }) {
-  return (
+export function SectionLabel({ children, info }: { children: ReactNode; info?: string }) {
+  const label = (
     <p className="text-xs font-semibold uppercase tracking-[0.08em] text-[var(--color-ink-subtle)]">
       {children}
     </p>
   );
+  return info ? <Tooltip text={info}>{label}</Tooltip> : label;
 }
 
-/** A labelled figure in the project overview strip. */
-export function Stat({ label, value, hint }: { label: string; value: ReactNode; hint?: string }) {
+/**
+ * A labelled figure in the project overview strip.
+ *
+ * `info` explains the label on hover; a dotted underline signals that it can be
+ * hovered. `infoAlign` mirrors the tooltip for stats at the right edge.
+ */
+export function Stat({
+  label,
+  value,
+  hint,
+  info,
+  infoAlign,
+}: {
+  label: string;
+  value: ReactNode;
+  hint?: string;
+  info?: string;
+  infoAlign?: 'start' | 'end';
+}) {
+  const labelText = (
+    <p
+      className={cx(
+        'text-xs font-medium uppercase tracking-wide text-[var(--color-ink-subtle)]',
+        info && 'underline decoration-dotted underline-offset-4',
+      )}
+    >
+      {label}
+    </p>
+  );
   return (
     <div>
-      <p className="text-xs font-medium uppercase tracking-wide text-[var(--color-ink-subtle)]">
-        {label}
-      </p>
+      {info ? (
+        <Tooltip text={info} align={infoAlign}>
+          {labelText}
+        </Tooltip>
+      ) : (
+        labelText
+      )}
       <p className="mt-1 text-xl font-semibold tabular-nums">{value}</p>
       {hint ? <p className="text-xs text-[var(--color-ink-subtle)]">{hint}</p> : null}
     </div>

@@ -18,6 +18,7 @@ import { getRun } from '@/lib/store';
 import { AnalysisPanel } from '@/components/dashboard/analysis-panel';
 import { ProjectChat } from '@/components/chat/project-chat';
 import { RecordsTabs, type RecordGroup } from '@/components/dashboard/records-tabs';
+import { OVERVIEW_HELP } from '@/components/ui/explanations';
 import { Badge, Card, CardBody, SectionLabel, Stat } from '@/components/ui/primitives';
 
 /**
@@ -83,16 +84,23 @@ export default async function DashboardPage({
             {project.description}
           </p>
         </div>
-        <Badge tone="outline">Status: {project.status}</Badge>
+        <Badge tone="outline" title="The project's current phase, taken from the project record." tooltipAlign="end">
+          Status: {project.status}
+        </Badge>
       </header>
 
       <section>
         <SectionLabel>Project overview</SectionLabel>
         <Card className="mt-2">
           <CardBody className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-5">
-            <Stat label="Planned completion" value={formatDate(project.plannedCompletion)} />
+            <Stat
+              label="Planned completion"
+              value={formatDate(project.plannedCompletion)}
+              info={OVERVIEW_HELP.planned}
+            />
             <Stat
               label="Current completion"
+              info={OVERVIEW_HELP.current}
               value={
                 <span className={isBehind ? 'text-[var(--color-severity-medium)]' : undefined}>
                   {formatDate(project.currentCompletion)}
@@ -100,14 +108,17 @@ export default async function DashboardPage({
               }
               hint={isBehind ? 'Differs from planned' : 'Matches planned'}
             />
-            <Stat label="Records" value={getRecordCount(project)} />
+            <Stat label="Records" value={getRecordCount(project)} info={OVERVIEW_HELP.records} />
             <Stat
               label="AI signals"
+              info={OVERVIEW_HELP.aiSignals}
               value={run ? run.signals.length : '—'}
               hint={run ? undefined : 'Not analysed'}
             />
             <Stat
               label="High severity"
+              info={OVERVIEW_HELP.highSeverity}
+              infoAlign="end"
               value={run ? highSeverityCount : '—'}
               hint={run ? undefined : 'Not analysed'}
             />

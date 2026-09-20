@@ -14,6 +14,7 @@ import { listProjects } from '@/lib/projects';
 import { listRuns } from '@/lib/store';
 import { evaluateProject, summariseEvaluations } from '@/lib/evaluation';
 import { formatCategory } from '@/components/signals/signal-card';
+import { CATEGORY_HELP, EVALUATION_HELP } from '@/components/ui/explanations';
 import {
   Badge,
   Card,
@@ -60,34 +61,39 @@ export default async function EvaluationPage() {
       </Notice>
 
       <section>
-        <SectionLabel>Summary</SectionLabel>
+        <SectionLabel info="Totals across all five projects, marked against the hidden answer key.">Summary</SectionLabel>
         <Card className="mt-2">
           <CardBody className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-6">
             <Stat
               label="Projects analysed"
               value={`${summary.projectsAnalyzed}/${summary.projectsTotal}`}
+              info={EVALUATION_HELP.projectsAnalysed}
             />
-            <Stat label="Expected signals" value={summary.expectedTotal} />
-            <Stat label="Matched" value={summary.matchedTotal} />
-            <Stat label="Missed" value={summary.missedTotal} />
+            <Stat label="Expected signals" value={summary.expectedTotal} info={EVALUATION_HELP.expected} />
+            <Stat label="Matched" value={summary.matchedTotal} info={EVALUATION_HELP.matched} />
+            <Stat label="Missed" value={summary.missedTotal} info={EVALUATION_HELP.missed} />
             <Stat
               label="Unmatched AI signals"
               value={summary.potentialFalsePositiveTotal}
               hint="Not proven errors"
+              info={EVALUATION_HELP.unmatched}
+              infoAlign="end"
             />
             <Stat
               label="Absences respected"
               value={`${summary.absencesRespected}/${summary.absencesTotal}`}
               hint="Resolved items left alone"
+              info={EVALUATION_HELP.absences}
+              infoAlign="end"
             />
           </CardBody>
         </Card>
 
         <Card className="mt-3">
           <CardBody className="grid grid-cols-1 gap-4 sm:grid-cols-3">
-            <Stat label="Human confirmed" value={summary.humanConfirmed} />
-            <Stat label="Human investigating" value={summary.humanInvestigating} />
-            <Stat label="Human dismissed" value={summary.humanDismissed} />
+            <Stat label="Human confirmed" value={summary.humanConfirmed} info={EVALUATION_HELP.humanConfirmed} />
+            <Stat label="Human investigating" value={summary.humanInvestigating} info={EVALUATION_HELP.humanInvestigating} />
+            <Stat label="Human dismissed" value={summary.humanDismissed} info={EVALUATION_HELP.humanDismissed} infoAlign="end" />
           </CardBody>
         </Card>
       </section>
@@ -100,7 +106,7 @@ export default async function EvaluationPage() {
       ) : null}
 
       <section className="space-y-4">
-        <SectionLabel>By project</SectionLabel>
+        <SectionLabel info="The same marking, one project at a time.">By project</SectionLabel>
 
         {evaluations.map((evaluation) => {
           const project = projects.find((candidate) => candidate.id === evaluation.projectId);
@@ -116,18 +122,28 @@ export default async function EvaluationPage() {
                   </CardTitle>
                   {evaluation.analyzed ? (
                     <div className="flex flex-wrap gap-1.5">
-                      <Badge tone="low">{evaluation.matches.length} matched</Badge>
+                      <Badge tone="low" title={EVALUATION_HELP.matched} tooltipAlign="end">
+                        {evaluation.matches.length} matched
+                      </Badge>
                       {evaluation.missed.length > 0 ? (
-                        <Badge tone="medium">{evaluation.missed.length} missed</Badge>
+                        <Badge tone="medium" title={EVALUATION_HELP.missed} tooltipAlign="end">
+                          {evaluation.missed.length} missed
+                        </Badge>
                       ) : null}
                       {evaluation.potentialFalsePositives.length > 0 ? (
-                        <Badge tone="outline">
+                        <Badge tone="outline" title={EVALUATION_HELP.unmatched} tooltipAlign="end">
                           {evaluation.potentialFalsePositives.length} unmatched
                         </Badge>
                       ) : null}
                     </div>
                   ) : (
-                    <Badge tone="outline">Not analysed</Badge>
+                    <Badge
+                      tone="outline"
+                      title="No analysis has been run for this project yet, so nothing can be matched or missed."
+                      tooltipAlign="end"
+                    >
+                      Not analysed
+                    </Badge>
                   )}
                 </div>
               </CardHeader>
@@ -150,7 +166,9 @@ export default async function EvaluationPage() {
                           className="border-l-2 border-[var(--color-severity-low)] pl-3"
                         >
                           <div className="flex flex-wrap items-center gap-2">
-                            <Badge tone="accent">{formatCategory(match.expected.category)}</Badge>
+                            <Badge tone="accent" title={CATEGORY_HELP[match.expected.category]}>
+                              {formatCategory(match.expected.category)}
+                            </Badge>
                             <Link
                               href={`/signals/${match.actual.id}`}
                               className="text-sm font-medium hover:underline"
@@ -184,7 +202,9 @@ export default async function EvaluationPage() {
                           key={`${expected.category}-${expected.description}`}
                           className="border-l-2 border-[var(--color-severity-medium)] pl-3"
                         >
-                          <Badge tone="medium">{formatCategory(expected.category)}</Badge>
+                          <Badge tone="medium" title={CATEGORY_HELP[expected.category]}>
+                            {formatCategory(expected.category)}
+                          </Badge>
                           <p className="mt-1 text-sm text-[var(--color-ink-muted)]">
                             {expected.description}
                           </p>
@@ -214,7 +234,9 @@ export default async function EvaluationPage() {
                       {evaluation.potentialFalsePositives.map((signal) => (
                         <li key={signal.id} className="border-l-2 border-[var(--color-border-strong)] pl-3">
                           <div className="flex flex-wrap items-center gap-2">
-                            <Badge tone="outline">{formatCategory(signal.category)}</Badge>
+                            <Badge tone="outline" title={CATEGORY_HELP[signal.category]}>
+                              {formatCategory(signal.category)}
+                            </Badge>
                             <Link
                               href={`/signals/${signal.id}`}
                               className="text-sm font-medium hover:underline"
@@ -242,7 +264,14 @@ export default async function EvaluationPage() {
                           }
                         >
                           <div className="flex flex-wrap items-center gap-2">
-                            <Badge tone={entry.respected ? 'low' : 'high'}>
+                            <Badge
+                              tone={entry.respected ? 'low' : 'high'}
+                              title={
+                                entry.respected
+                                  ? 'This topic was already resolved and the AI correctly did not raise it as active.'
+                                  : 'The AI raised a topic the records show was already resolved. This is a failure.'
+                              }
+                            >
                               {entry.respected ? 'Respected' : 'Surfaced'}
                             </Badge>
                             <span className="text-sm font-medium">{entry.absence.topic}</span>

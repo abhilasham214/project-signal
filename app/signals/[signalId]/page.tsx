@@ -19,6 +19,7 @@ import { getSignal } from '@/lib/store';
 import { getProject } from '@/lib/projects';
 import { ReviewPanel } from '@/components/signals/review-panel';
 import { STATUS_LABELS, formatCategory } from '@/components/signals/signal-card';
+import { CATEGORY_HELP, CONFIDENCE_HELP, SEVERITY_HELP, STATUS_HELP } from '@/components/ui/explanations';
 import {
   Badge,
   Card,
@@ -72,10 +73,19 @@ export default async function SignalDetailPage({
         <SectionLabel>AI signal</SectionLabel>
 
         <div className="mt-2 flex flex-wrap items-center gap-2">
-          <Badge tone="accent">{formatCategory(signal.category)}</Badge>
-          <Badge tone={toneForLevel(signal.severity)}>{signal.severity} severity</Badge>
-          <Badge tone="outline">{signal.confidence} confidence</Badge>
-          <Badge tone={signal.status === 'NEW' ? 'neutral' : 'accent'}>
+          <Badge tone="accent" title={CATEGORY_HELP[signal.category]}>
+            {formatCategory(signal.category)}
+          </Badge>
+          <Badge tone={toneForLevel(signal.severity)} title={SEVERITY_HELP[signal.severity]}>
+            {signal.severity} severity
+          </Badge>
+          <Badge tone="outline" title={CONFIDENCE_HELP[signal.confidence]}>
+            {signal.confidence} confidence
+          </Badge>
+          <Badge
+            tone={signal.status === 'NEW' ? 'neutral' : 'accent'}
+            title={STATUS_HELP[signal.status]}
+          >
             {STATUS_LABELS[signal.status] ?? signal.status}
           </Badge>
         </div>

@@ -14,7 +14,19 @@
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import type { HumanReview, ReviewStatus } from '@/lib/ai/schemas';
-import { Button, Notice } from '@/components/ui/primitives';
+import { DECISION_HELP } from '@/components/ui/explanations';
+import { Button, Notice, Tooltip } from '@/components/ui/primitives';
+
+/** Formats a saved-at timestamp, e.g. "20 Sep 2026, 15:04". */
+function formatSavedAt(isoTimestamp: string): string {
+  return new Date(isoTimestamp).toLocaleString('en-GB', {
+    day: '2-digit',
+    month: 'short',
+    year: 'numeric',
+    hour: '2-digit',
+    minute: '2-digit',
+  });
+}
 
 /** The three decisions a reviewer can record, with what each one means. */
 const REVIEW_ACTIONS: ReadonlyArray<{ status: ReviewStatus; label: string; hint: string }> = [
@@ -78,21 +90,28 @@ export function ReviewPanel({
           {REVIEW_ACTIONS.map((action) => {
             const isSelected = selectedStatus === action.status;
             return (
-              <Button
-                key={action.status}
-                variant={isSelected ? 'primary' : action.status === 'DISMISSED' ? 'danger' : 'secondary'}
-                onClick={() => setSelectedStatus(action.status)}
-                aria-pressed={isSelected}
-                title={action.hint}
-              >
-                {action.label}
-              </Button>
+              <Tooltip key={action.status} text={DECISION_HELP[action.status] ?? action.hint}>
+                <Button
+                  variant={isSelected ? 'primary' : action.status === 'DISMISSED' ? 'danger' : 'secondary'}
+                  onClick={() => setSelectedStatus(action.status)}
+                  aria-pressed={isSelected}
+                >
+                  {action.label}
+                </Button>
+              </Tooltip>
             );
           })}
         </div>
-        <p className="mt-2 text-xs text-[var(--color-ink-subtle)]">
+        <p className="mt-2 text-sm text-[var(--color-ink-muted)]">
           {REVIEW_ACTIONS.find((action) => action.status === selectedStatus)?.hint ??
             'No decision has been recorded yet.'}
+        </p>
+        {/* why always shown: whoever opens this later needs to know how stale
+            the decision is, not only that one exists. */}
+        <p className="mt-1 text-xs text-[var(--color-ink-subtle)]">
+          {savedAt
+            ? `Decision last updated ${formatSavedAt(savedAt)}`
+            : 'No decision has been saved yet.'}
         </p>
       </div>
 
@@ -117,11 +136,6 @@ export function ReviewPanel({
           {isSaving ? 'Saving…' : 'Save review'}
         </Button>
 
-        {savedAt && !hasUnsavedChanges ? (
-          <p className="text-xs text-[var(--color-ink-subtle)]">
-            Saved {new Date(savedAt).toLocaleString('en-GB')}
-          </p>
-        ) : null}
         {hasUnsavedChanges ? (
           <p className="text-xs text-[var(--color-severity-medium)]">Unsaved changes</p>
         ) : null}

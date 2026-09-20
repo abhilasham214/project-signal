@@ -8,6 +8,7 @@
 
 import Link from 'next/link';
 import type { ValidatedSignal } from '@/lib/ai/schemas';
+import { CATEGORY_HELP, CONFIDENCE_HELP, SEVERITY_HELP, STATUS_HELP } from '@/components/ui/explanations';
 import { Badge, Card, CardBody, SourceId, toneForLevel } from '@/components/ui/primitives';
 
 /** Human-readable labels for the review statuses. */
@@ -36,10 +37,18 @@ export function SignalCard({ signal }: { signal: ValidatedSignal }) {
     <Card>
       <CardBody>
         <div className="flex flex-wrap items-center gap-2">
-          <Badge tone="accent">{formatCategory(signal.category)}</Badge>
-          <Badge tone={toneForLevel(signal.severity)}>{signal.severity} severity</Badge>
-          <Badge tone="outline">{signal.confidence} confidence</Badge>
-          <Badge tone={toneForStatus(signal.status)}>{STATUS_LABELS[signal.status] ?? signal.status}</Badge>
+          <Badge tone="accent" title={CATEGORY_HELP[signal.category]}>
+            {formatCategory(signal.category)}
+          </Badge>
+          <Badge tone={toneForLevel(signal.severity)} title={SEVERITY_HELP[signal.severity]}>
+            {signal.severity} severity
+          </Badge>
+          <Badge tone="outline" title={CONFIDENCE_HELP[signal.confidence]}>
+            {signal.confidence} confidence
+          </Badge>
+          <Badge tone={toneForStatus(signal.status)} title={STATUS_HELP[signal.status]}>
+            {STATUS_LABELS[signal.status] ?? signal.status}
+          </Badge>
         </div>
 
         <h3 className="mt-3 text-sm font-semibold leading-snug">{signal.title}</h3>
